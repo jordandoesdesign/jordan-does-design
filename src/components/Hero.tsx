@@ -31,7 +31,11 @@ const Hero = () => {
           </div>
 
           {/* Character Illustration */}
-          
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md h-96 bg-muted rounded-3xl flex items-center justify-center">
+              <span className="text-muted-foreground text-lg">Image Placeholder</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>;

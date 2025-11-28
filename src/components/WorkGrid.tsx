@@ -36,31 +36,9 @@ const ProjectCard = ({
 }: {
   project: typeof projects[0];
 }) => {
-  const renderPlaceholder = () => {
-    switch (project.image) {
-      case "grid":
-        return <div className="grid grid-cols-3 gap-2 p-4">
-            {[...Array(6)].map((_, i) => {})}
-          </div>;
-      case "single":
-        return <div className="p-6 flex items-center justify-center">
-            
-          </div>;
-      case "triple":
-        return <div className="p-6 flex items-center justify-center gap-3">
-            
-            
-            
-          </div>;
-      case "double":
-        return;
-      default:
-        return null;
-    }
-  };
   return <div className="group">
-      <div className="bg-muted rounded-3xl overflow-hidden mb-4 transition-transform duration-300 hover:scale-105">
-        {renderPlaceholder()}
+      <div className="bg-muted rounded-3xl overflow-hidden mb-4 transition-transform duration-300 hover:scale-105 h-64 flex items-center justify-center">
+        <span className="text-muted-foreground">Image Placeholder</span>
       </div>
       <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
       <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
