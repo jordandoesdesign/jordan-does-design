@@ -31,25 +31,12 @@ const About = () => {
       </section>
 
       {/* Services Marquee */}
-      <section className="py-8 px-6 bg-white/[0.78]">
-        <div className="container mx-auto bg-white">
-          <div className="overflow-hidden whitespace-nowrap">
-            <div className="inline-block animate-marquee">
-              <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
-              <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Decorative Blobs */}
       <div className="relative px-6 mb-16">
         <div className="container mx-auto">
-          <div className="flex gap-4">
-            <div className="w-16 h-16 rounded-full bg-[#FF825A] opacity-40"></div>
-            <div className="w-20 h-20 rounded-full bg-[#FF825A] opacity-30"></div>
-            <div className="w-12 h-12 rounded-full bg-[#FF825A] opacity-50"></div>
-          </div>
+          
         </div>
       </div>
 
