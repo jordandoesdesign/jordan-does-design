@@ -1,12 +1,9 @@
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-
 const About = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ✿ & More! ";
-  
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* About Hero Section */}
@@ -34,8 +31,8 @@ const About = () => {
       </section>
 
       {/* Services Marquee */}
-      <section className="py-8 px-6">
-        <div className="container mx-auto">
+      <section className="py-8 px-6 bg-white/[0.78]">
+        <div className="container mx-auto bg-white">
           <div className="overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee">
               <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
@@ -60,8 +57,6 @@ const About = () => {
       <ContactForm />
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
