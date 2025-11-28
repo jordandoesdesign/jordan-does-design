@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-12 px-6">
+    <footer className="py-12 px-6" style={{ backgroundColor: '#FF825A' }}>
       <div className="container mx-auto text-center">
         {/* Star decoration */}
         <div className="flex justify-center gap-3 mb-8">
