@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ['Libre Caslon Text', 'serif'],
         body: ['Montserrat', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

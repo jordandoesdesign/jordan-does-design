@@ -32,12 +32,6 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Form */}
           <div>
-            {/* Decorative blobs */}
-            <div className="flex gap-4 mb-6">
-              
-              
-            </div>
-
             <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-12">
               Contact Me
             </h2>
@@ -56,9 +50,9 @@ const ContactForm = () => {
               <Textarea placeholder="Your Message" value={formData.message} onChange={e => setFormData({
               ...formData,
               message: e.target.value
-            })} required rows={6} className="border-2 border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-none" />
+            })} required rows={6} className="border-2 border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-y" />
               
-              <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">
+              <Button type="submit" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                 Send Message
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -67,12 +61,8 @@ const ContactForm = () => {
 
           {/* Illustration */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Orange star burst */}
-              
-              
-              {/* Pencil illustration */}
-              
+            <div className="w-full max-w-md h-96 bg-muted rounded-3xl flex items-center justify-center">
+              <span className="text-muted-foreground text-lg">Image Placeholder</span>
             </div>
           </div>
         </div>
