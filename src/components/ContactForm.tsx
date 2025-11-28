@@ -40,17 +40,17 @@ const ContactForm = () => {
               <Input type="text" placeholder="Your Name" value={formData.name} onChange={e => setFormData({
               ...formData,
               name: e.target.value
-            })} required className="border-2 border-primary placeholder:text-primary/60 text-primary focus:ring-primary" />
+            })} required className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary" />
               
               <Input type="email" placeholder="Your Email" value={formData.email} onChange={e => setFormData({
               ...formData,
               email: e.target.value
-            })} required className="border-2 border-primary placeholder:text-primary/60 text-primary focus:ring-primary" />
+            })} required className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary" />
               
               <Textarea placeholder="Your Message" value={formData.message} onChange={e => setFormData({
               ...formData,
               message: e.target.value
-            })} required rows={6} className="border-2 border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-y" />
+            })} required rows={6} className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-y" />
               
               <Button type="submit" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                 Send Message

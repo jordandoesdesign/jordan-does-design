@@ -1,3 +1,5 @@
+import { ArrowDown } from "lucide-react";
+
 const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
   return <section className="pt-32 pb-16 md:pb-24 px-6">
@@ -23,10 +25,9 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Curly Arrow Decoration */}
-            <div className="text-4xl text-primary">
-              <span>~</span>
-              <span>{'}'}</span>
+            {/* Arrow Decoration */}
+            <div className="text-primary">
+              <ArrowDown className="w-12 h-12" strokeWidth={2} />
             </div>
           </div>
 
