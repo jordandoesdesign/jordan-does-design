@@ -52,10 +52,7 @@ const WorkGrid = () => {
   return <section className="py-16 px-6">
       <div className="container mx-auto">
         {/* Curly arrows decoration */}
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-3xl text-primary">~</span>
-          <span className="text-3xl text-primary">{'}'}</span>
-        </div>
+        
         
         <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-12">
           My work
