@@ -1,19 +1,18 @@
 import { ArrowDown } from "lucide-react";
-
 const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
   return <section className="pt-32 pb-16 md:pb-24 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div>
+          <div className="mx-[30px]">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4">
               Hi, I'm
             </h1>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-primary mb-4">
               Jordan
             </h1>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-8">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl px-[40px] py-[29px] pb-0 pt-[30px]">
               I design
             </h1>
             
