@@ -1,1 +1,4 @@
 project_id = "xhigtmlmltdaqtrncnup"
+
+[functions.get-contact-submissions]
+verify_jwt = false
