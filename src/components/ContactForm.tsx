@@ -4,28 +4,53 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
-  const {
-    toast
-  } = useToast();
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-    // For now, just show a toast. Database integration can be added later.
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon!"
-    });
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+          }
+        ]);
+
+      if (error) throw error;
+
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you soon!"
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return <section className="py-16 px-6">
       <div className="container mx-auto">
@@ -52,8 +77,13 @@ const ContactForm = () => {
               message: e.target.value
             })} required rows={6} className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-y" />
               
-              <Button type="submit" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                Send Message
+              <Button 
+                type="submit" 
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>
