@@ -1,29 +1,59 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-
 const LogoDesigns = () => {
-  const initialLogos = [
-    { name: "Greenroom", client: "Local Frozen Treats + More", bg: "bg-[#E8F4E8]" },
-    { name: "SOLANA", client: "Medspa", bg: "bg-[#1B2B5E]" },
-    { name: "Peralta", client: "Mexican Restaurant", bg: "bg-[#F5B052]" },
-    { name: "Frugal Feasts", client: "Recipe Blog", bg: "bg-[#F0F4E8]" },
-    { name: "Better Together", client: "Community Market", bg: "bg-[#E8D8F0]" },
-    { name: "Boulevard", client: "Fashion Boutique", bg: "bg-[#E0F4F4]" },
-    { name: "The Red Wolf Inn", client: "Bed & Breakfast", bg: "bg-background" },
-    { name: "MUTCH", client: "Sports Brand", bg: "bg-[#F25C54]" },
-    { name: "Sushi Bar", client: "Local Restaurant", bg: "bg-[#B8C77E]" },
-    { name: "Fast Lab", client: "Tech Startup", bg: "bg-[#D4EFEF]" },
-  ];
-
-  const seeAlsoProjects = [
-    { title: "Social Media graphics you love to see", category: "Social Media Templates" },
-    { title: "Beautiful and customizable Canva ebooks", category: "Canva ebook Templates" },
-    { title: "Designs with a focus on brand and design", category: "SURR! Brand Design" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const initialLogos = [{
+    name: "Greenroom",
+    client: "Local Frozen Treats + More",
+    bg: "bg-[#E8F4E8]"
+  }, {
+    name: "SOLANA",
+    client: "Medspa",
+    bg: "bg-[#1B2B5E]"
+  }, {
+    name: "Peralta",
+    client: "Mexican Restaurant",
+    bg: "bg-[#F5B052]"
+  }, {
+    name: "Frugal Feasts",
+    client: "Recipe Blog",
+    bg: "bg-[#F0F4E8]"
+  }, {
+    name: "Better Together",
+    client: "Community Market",
+    bg: "bg-[#E8D8F0]"
+  }, {
+    name: "Boulevard",
+    client: "Fashion Boutique",
+    bg: "bg-[#E0F4F4]"
+  }, {
+    name: "The Red Wolf Inn",
+    client: "Bed & Breakfast",
+    bg: "bg-background"
+  }, {
+    name: "MUTCH",
+    client: "Sports Brand",
+    bg: "bg-[#F25C54]"
+  }, {
+    name: "Sushi Bar",
+    client: "Local Restaurant",
+    bg: "bg-[#B8C77E]"
+  }, {
+    name: "Fast Lab",
+    client: "Tech Startup",
+    bg: "bg-[#D4EFEF]"
+  }];
+  const seeAlsoProjects = [{
+    title: "Social Media graphics you love to see",
+    category: "Social Media Templates"
+  }, {
+    title: "Beautiful and customizable Canva ebooks",
+    category: "Canva ebook Templates"
+  }, {
+    title: "Designs with a focus on brand and design",
+    category: "SURR! Brand Design"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -39,8 +69,7 @@ const LogoDesigns = () => {
 
           {/* Initial Logo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-            {initialLogos.map((logo, index) => (
-              <div key={index} className="space-y-4">
+            {initialLogos.map((logo, index) => <div key={index} className="space-y-4">
                 <div className={`${logo.bg} rounded-3xl h-64 flex items-center justify-center p-8`}>
                   <span className="text-foreground text-xl font-semibold">{logo.name}</span>
                 </div>
@@ -48,24 +77,24 @@ const LogoDesigns = () => {
                   <p className="text-sm font-semibold text-primary">Logo Name</p>
                   <p className="text-sm text-muted-foreground">{logo.client}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Greenroom Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">
-                <span className="text-2xl">✿</span>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">✿
+Greenroom
+✿<span className="text-2xl">✿</span>
                 Greenroom
                 <span className="text-2xl">✿</span>
               </h2>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
                 <span>Logo Design</span>
-                <span>•</span>
-                <span>Face Design</span>
-                <span>•</span>
-                <span>Flavor Designs & More</span>
+                <span> ✿</span>
+                <span>Brand Design</span>
+                <span>✿</span>
+                <span>Brand Design Brand Style Guides</span>
               </div>
             </div>
 
@@ -134,8 +163,7 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
                   <div>
                     <p className="text-sm text-muted-foreground mb-2">{project.category}</p>
                     <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
@@ -143,8 +171,7 @@ const LogoDesigns = () => {
                   <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                     See more
                   </Button>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -156,12 +183,10 @@ const LogoDesigns = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <iframe 
-                  style={{ border: 'none', width: '100%' }} 
-                  height="600" 
-                  src="https://www.supaform.io/forms/contact-me?embedded=true"
-                  title="Contact Form"
-                />
+                <iframe style={{
+                border: 'none',
+                width: '100%'
+              }} height="600" src="https://www.supaform.io/forms/contact-me?embedded=true" title="Contact Form" />
               </div>
               
               <div className="flex justify-center">
@@ -177,8 +202,6 @@ const LogoDesigns = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default LogoDesigns;
