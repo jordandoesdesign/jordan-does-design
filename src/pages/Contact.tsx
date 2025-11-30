@@ -1,8 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
 
 const Contact = () => {
-
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -13,22 +14,24 @@ const Contact = () => {
           <div className="absolute -left-32 top-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
           <div className="absolute -right-32 bottom-0 w-80 h-80 bg-secondary/20 rounded-full blur-3xl"></div>
           
-          <div className="relative z-10">
-            <h1 className="text-6xl md:text-7xl font-heading font-bold text-primary text-center mb-8">
+          <div className="relative z-10 text-center">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-primary mb-8">
               Contact
             </h1>
             
-            <p className="text-center text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed 
-              posuere lectus. Morbi ut commodo enim, nec consequat velit. Proin a.
+            <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
+              Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing together.
             </p>
 
-            <iframe 
-              style={{ border: 'none', width: '100%' }} 
-              height="800" 
-              src="https://www.supaform.io/forms/contact-me?embedded=true"
-              title="Contact Form"
-            />
+            <a href="mailto:Jordan@JordanVeirs.com">
+              <Button 
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       </section>

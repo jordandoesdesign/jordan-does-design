@@ -9,76 +9,76 @@ const projects = [
     id: 1,
     title: "Logo Design & Brand Design",
     subtitle: "Logo & Brand Design Strategy",
-    images: ["grid"], // 6 small logos in grid
+    images: ["grid"],
     link: "/work/logo-designs"
   },
   {
     id: 2,
     title: "Canva Template Design",
-    subtitle: "Weekly Meal Plans & Pinterest Templates",
-    images: ["large"], // Single large meal plan template
+    subtitle: "Editable templates for a food blogger who shares weekly meal plans on social media",
+    images: ["large"],
     link: "/work/canva-templates"
   },
   {
     id: 3,
-    title: "Unbound Wellness • Pinterest Canva Templates",
-    subtitle: "Getting started with UX Choreography",
-    images: ["placeholder"],
-    link: "/work/unbound-wellness"
-  },
-  {
-    id: 4,
-    title: "SURR! Brand Design • Tags • Menu Price Sheet",
-    subtitle: "Getting started with UX Choreography",
+    title: "Brand Design: SURRI",
+    subtitle: "Logo & brand created for a small business that sells handmade consumer goods",
     images: ["placeholder"],
     link: "/work/surr-brand"
   },
   {
+    id: 4,
+    title: "Canva Pinterest Graphics",
+    subtitle: "Easy to edit Pinterest templates for a blogger who loves to create content in Canva",
+    images: ["placeholder"],
+    link: "/work/pinterest-graphics"
+  },
+  {
     id: 5,
-    title: "Rose City Rollers • All-Stars Social Media Event Templates",
-    subtitle: "Getting started with UX Choreography",
+    title: "Social Media Event Templates • Rose City Rollers",
+    subtitle: "Social Media Design for Events & Tournaments",
     images: ["placeholder"],
     link: "/work/rose-city-rollers"
   },
   {
     id: 6,
     title: "Icons & Illustrations",
-    subtitle: "The story of how the item-listing of Swiggy Daily was designed",
+    subtitle: "Custom Illustration Projects",
     images: ["placeholder"],
     link: "/work/icons-illustrations"
   }
 ];
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
-  const isLogoDesign = project.id === 1;
-  
   return (
     <div className="group">
       {/* Image Area */}
-      <div className="bg-muted rounded-3xl overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02]">
-        {project.images[0] === "grid" ? (
-          // Logo grid layout
-          <div className="grid grid-cols-3 gap-4 p-8">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="aspect-square bg-background rounded-2xl flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">Logo {i + 1}</span>
-              </div>
-            ))}
-          </div>
-        ) : project.images[0] === "large" ? (
-          // Large template preview
-          <div className="p-8 flex items-center justify-center min-h-[400px]">
-            <div className="bg-background rounded-2xl w-full h-full flex items-center justify-center">
-              <span className="text-muted-foreground">Template Preview</span>
+      <Link to={project.link}>
+        <div className="bg-muted rounded-3xl overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+          {project.images[0] === "grid" ? (
+            // Logo grid layout
+            <div className="grid grid-cols-3 gap-4 p-8">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="aspect-square bg-background rounded-2xl flex items-center justify-center">
+                  <span className="text-muted-foreground text-sm">Logo {i + 1}</span>
+                </div>
+              ))}
             </div>
-          </div>
-        ) : (
-          // Standard placeholder
-          <div className="h-80 flex items-center justify-center">
-            <span className="text-muted-foreground">Image Placeholder</span>
-          </div>
-        )}
-      </div>
+          ) : project.images[0] === "large" ? (
+            // Large template preview
+            <div className="p-8 flex items-center justify-center min-h-[400px]">
+              <div className="bg-background rounded-2xl w-full h-full flex items-center justify-center">
+                <span className="text-muted-foreground">Template Preview</span>
+              </div>
+            </div>
+          ) : (
+            // Standard placeholder
+            <div className="h-80 flex items-center justify-center">
+              <span className="text-muted-foreground">Image Placeholder</span>
+            </div>
+          )}
+        </div>
+      </Link>
 
       {/* Content */}
       <div>
@@ -88,25 +88,15 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
         <p className="text-muted-foreground text-sm mb-6">
           {project.subtitle}
         </p>
-        {isLogoDesign ? (
-          <Link to="/work/logo-designs">
-            <Button 
-              variant="outline" 
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
-              View Project
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Button>
-          </Link>
-        ) : (
+        <Link to={project.link}>
           <Button 
             variant="outline" 
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           >
-            {project.id <= 2 ? "View Project" : "Read More"}
+            View Project
             <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
-        )}
+        </Link>
       </div>
     </div>
   );
