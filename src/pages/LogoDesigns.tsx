@@ -83,10 +83,7 @@ const LogoDesigns = () => {
           {/* Greenroom Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">Greenroom
-                Greenroom
-                
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">Greenroom</h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
                 <span className="text-base">Logo Design</span>
                 <span className="text-base">✿</span>
@@ -128,11 +125,11 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Peralta</h2>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-                <span>Logo Design</span>
-                <span>✿</span>
-                <span>Brand Design</span>
-                <span>✿</span>
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
+                <span className="text-base">Logo Design</span>
+                <span className="text-base">✿</span>
+                <span className="text-base">Brand Design</span>
+                
                 
               </div>
             </div>
@@ -145,7 +142,7 @@ const LogoDesigns = () => {
             {/* Peralta Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-background rounded-3xl h-80 flex items-center justify-center border-2 border-muted p-8">
-                <span className="text-4xl font-heading font-bold text-primary">Peralta</span>
+                
               </div>
               <div className="bg-gradient-to-b from-[#8B6B47] to-[#2C1810] rounded-3xl h-80"></div>
             </div>
