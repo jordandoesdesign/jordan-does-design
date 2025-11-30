@@ -150,3 +150,19 @@
 .nav-link:hover::after {
   @apply scale-x-100;
 }
+
+/* Supaform Custom Styles */
+iframe[src*="supaform.io"] {
+  /* Hide the form title */
+  & + * h1,
+  & + * h2 {
+    display: none !important;
+  }
+}
+
+/* Target Supaform elements - these selectors work via iframe styling */
+:root {
+  --supaform-button-bg: hsl(var(--primary));
+  --supaform-button-text: hsl(var(--primary-foreground));
+  --supaform-input-border: hsl(var(--primary));
+}
