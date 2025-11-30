@@ -83,18 +83,16 @@ const LogoDesigns = () => {
           {/* Greenroom Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">✿
-Greenroom
-✿<span className="text-2xl">✿</span>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">Greenroom
                 Greenroom
-                <span className="text-2xl">✿</span>
+                
               </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
-                <span>Logo Design</span>
-                <span> ✿</span>
-                <span>Brand Design</span>
-                <span>✿</span>
-                <span>Brand Design Brand Style Guides</span>
+                <span className="text-base">Logo Design</span>
+                <span className="text-base">✿</span>
+                <span className="text-base">Brand Design</span>
+                <span className="text-base">✿</span>
+                <span className="text-base">Brand Design Brand Style Guides</span>
               </div>
             </div>
 
@@ -129,15 +127,13 @@ Greenroom
           {/* Peralta Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-                Peralta
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Peralta</h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <span>Logo Design</span>
-                <span>•</span>
-                <span>Face Design</span>
-                <span>•</span>
-                <span>Brand Guides</span>
+                <span>✿</span>
+                <span>Brand Design</span>
+                <span>✿</span>
+                
               </div>
             </div>
 
