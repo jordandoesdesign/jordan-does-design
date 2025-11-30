@@ -74,7 +74,7 @@ const LogoDesigns = () => {
                   <span className="text-foreground text-xl font-semibold">{logo.name}</span>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-primary">Logo Name</p>
+                  <p className="text-sm font-semibold text-primary">Greenroom</p>
                   <p className="text-sm text-muted-foreground">{logo.client}</p>
                 </div>
               </div>)}
