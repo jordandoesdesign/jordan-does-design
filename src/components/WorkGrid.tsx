@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 const projects = [{
   id: 1,
   title: "Logo Designs",
@@ -36,16 +37,31 @@ const ProjectCard = ({
 }: {
   project: typeof projects[0];
 }) => {
+  const isLogoDesign = project.id === 1;
+  const buttonContent = (
+    <>
+      Read More
+      <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
+    </>
+  );
+
   return <div className="group">
       <div className="bg-muted rounded-3xl overflow-hidden mb-4 transition-transform duration-300 hover:scale-105 h-64 flex items-center justify-center">
         <span className="text-muted-foreground">Image Placeholder</span>
       </div>
       <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
       <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-      <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-        Read More
-        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-      </Button>
+      {isLogoDesign ? (
+        <Link to="/work/logo-designs">
+          <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+            {buttonContent}
+          </Button>
+        </Link>
+      ) : (
+        <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+          {buttonContent}
+        </Button>
+      )}
     </div>;
 };
 const WorkGrid = () => {

@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -49,6 +50,8 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
+  const isLogoDesign = project.id === 1;
+  
   return (
     <div className="group">
       {/* Image Area */}
@@ -85,13 +88,25 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
         <p className="text-muted-foreground text-sm mb-6">
           {project.subtitle}
         </p>
-        <Button 
-          variant="outline" 
-          className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-        >
-          {project.id <= 2 ? "View Project" : "Read More"}
-          <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-        </Button>
+        {isLogoDesign ? (
+          <Link to="/work/logo-designs">
+            <Button 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              View Project
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
+          </Link>
+        ) : (
+          <Button 
+            variant="outline" 
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            {project.id <= 2 ? "View Project" : "Read More"}
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
+        )}
       </div>
     </div>
   );
