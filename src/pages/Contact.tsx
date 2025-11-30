@@ -1,59 +1,7 @@
-import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([
-          {
-            name: formData.name,
-            email: formData.email,
-            message: formData.message
-          }
-        ]);
-
-      if (error) throw error;
-
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon!"
-      });
-      
-      setFormData({
-        name: "",
-        email: "",
-        message: ""
-      });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen">
@@ -75,44 +23,12 @@ const Contact = () => {
               posuere lectus. Morbi ut commodo enim, nec consequat velit. Proin a.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <Input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={e => setFormData({ ...formData, name: e.target.value })}
-                required
-                className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary h-14"
-              />
-              
-              <Input
-                type="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={e => setFormData({ ...formData, email: e.target.value })}
-                required
-                className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary h-14"
-              />
-              
-              <Textarea
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={e => setFormData({ ...formData, message: e.target.value })}
-                required
-                rows={6}
-                className="border border-primary placeholder:text-primary/60 text-primary focus:ring-primary resize-y"
-              />
-              
-              <Button
-                type="submit"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Sending..." : "Send Message"}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </form>
+            <iframe 
+              style={{ border: 'none', width: '100%' }} 
+              height="800" 
+              src="https://www.supaform.io/forms/contact-me?embedded=true"
+              title="Contact Form"
+            />
           </div>
         </div>
       </section>
