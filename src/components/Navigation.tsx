@@ -12,9 +12,7 @@ const Navigation = () => {
             <Link to="/about" className="nav-link text-foreground hover:text-primary text-base md:text-lg font-medium">
               About
             </Link>
-            <Link to="/contact" className="nav-link text-foreground hover:text-primary text-base md:text-lg font-medium">
-              Contact
-            </Link>
+            
           </div>
         </div>
       </div>
