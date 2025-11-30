@@ -170,26 +170,9 @@ const LogoDesigns = () => {
 
           {/* Contact Section */}
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-8 text-center">
-              Contact Me
-            </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <iframe style={{
-                border: 'none',
-                width: '100%'
-              }} height="600" src="https://www.supaform.io/forms/contact-me?embedded=true" title="Contact Form" />
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="w-full max-w-md h-96 bg-[#FD5622] rounded-3xl flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-background text-6xl font-bold opacity-20">✿</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </section>
