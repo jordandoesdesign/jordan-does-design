@@ -5,21 +5,21 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="mx-[30px]">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4">
+          <div className="mx-[30px] px-[30px]">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px]">
               Hi, I'm
             </h1>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-primary mb-4">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-primary mb-4 px-[20px]">
               Jordan
             </h1>
-            <h1 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl px-[40px] py-[29px] pb-0 pt-[30px]">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl px-[40px] pb-0 py-[14px] pt-[35px]">
               I design
             </h1>
             
             {/* Marquee Services */}
             <div className="overflow-hidden whitespace-nowrap mb-8">
               <div className="inline-block animate-marquee">
-                <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
+                <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
                 <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
               </div>
             </div>
