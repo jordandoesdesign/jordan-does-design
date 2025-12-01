@@ -1,6 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
+import greenroomLogo from "@/assets/greenroom-logo.png";
 const LogoDesigns = () => {
   const initialLogos = [{
     name: "Greenroom",
@@ -43,16 +46,11 @@ const LogoDesigns = () => {
     client: "Tech Startup",
     bg: "bg-[#D4EFEF]"
   }];
-  const seeAlsoProjects = [{
-    title: "Social Media graphics you love to see",
-    category: "Social Media Templates"
-  }, {
-    title: "Beautiful and customizable Canva ebooks",
-    category: "Canva ebook Templates"
-  }, {
-    title: "Designs with a focus on brand and design",
-    category: "SURR! Brand Design"
-  }];
+  const seeAlsoProjects = [
+    { title: "Canva Template Design", link: "/work/canva-templates" },
+    { title: "Social Media Event Templates • Rose City Rollers", link: "/work/rose-city-rollers" },
+    { title: "Icons & Illustrations", link: "/work/icons-illustrations" }
+  ];
   return <div className="min-h-screen bg-background">
       <Navigation />
       
@@ -100,8 +98,8 @@ const LogoDesigns = () => {
 
             {/* Greenroom Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-[#1F3A2E] rounded-3xl h-80 flex items-center justify-center">
-                <span className="text-[#E8F4E8] text-xl font-semibold">Greenroom Logo</span>
+              <div className="bg-[#1F3A2E] rounded-3xl h-80 flex items-center justify-center p-8">
+                <img src={greenroomLogo} alt="Greenroom Logo" className="w-full h-full object-contain" />
               </div>
               <div className="bg-[#E8F4E8] rounded-3xl h-80 flex items-center justify-center">
                 <span className="text-[#1F3A2E] text-xl font-semibold">T-Shirt Mockup</span>
@@ -156,23 +154,33 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-2">{project.category}</p>
-                    <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-                  </div>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
-                    See more
-                  </Button>
-                </div>)}
+              {seeAlsoProjects.map((project, index) => (
+                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                  <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
+                  <Link to={project.link}>
+                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
+                      Read More →
+                    </Button>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Contact Section */}
-          <div className="mb-16">
-            
-            
-            
+          {/* Let's Work Together CTA */}
+          <div className="text-center py-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              Let's Work Together
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+              Ready to bring your vision to life? Get in touch and let's create something amazing.
+            </p>
+            <a href="mailto:Jordan@JordanVeirs.com">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       </section>

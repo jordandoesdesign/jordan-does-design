@@ -1,8 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoGrid from "@/assets/logo-grid.png";
+import canvaMealPlan from "@/assets/canva-meal-plan.png";
+import surriMockup from "@/assets/surri-mockup.png";
+import pinterestCollection from "@/assets/pinterest-collection.png";
+import rollersSocial from "@/assets/rollers-social.png";
+import illustrationCollection from "@/assets/illustration-collection.png";
 
 const projects = [
   {
@@ -50,33 +56,21 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
+  const imageMap: { [key: number]: string } = {
+    1: logoGrid,
+    2: canvaMealPlan,
+    3: surriMockup,
+    4: pinterestCollection,
+    5: rollersSocial,
+    6: illustrationCollection
+  };
+  
   return (
     <div className="group">
       {/* Image Area */}
       <Link to={project.link}>
-        <div className="bg-muted rounded-3xl overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
-          {project.images[0] === "grid" ? (
-            // Logo grid layout
-            <div className="grid grid-cols-3 gap-4 p-8">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="aspect-square bg-background rounded-2xl flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Logo {i + 1}</span>
-                </div>
-              ))}
-            </div>
-          ) : project.images[0] === "large" ? (
-            // Large template preview
-            <div className="p-8 flex items-center justify-center min-h-[400px]">
-              <div className="bg-background rounded-2xl w-full h-full flex items-center justify-center">
-                <span className="text-muted-foreground">Template Preview</span>
-              </div>
-            </div>
-          ) : (
-            // Standard placeholder
-            <div className="h-80 flex items-center justify-center">
-              <span className="text-muted-foreground">Image Placeholder</span>
-            </div>
-          )}
+        <div className="bg-muted rounded-3xl overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer h-80">
+          <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
         </div>
       </Link>
 
@@ -118,6 +112,24 @@ const Work = () => {
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Let's Work Together CTA */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+            Let's Work Together
+          </h2>
+          <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+            Ready to bring your vision to life? Get in touch and let's create something amazing.
+          </p>
+          <a href="mailto:Jordan@JordanVeirs.com">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Mail className="mr-2 h-5 w-5" />
+              Contact Me
+            </Button>
+          </a>
         </div>
       </section>
 
