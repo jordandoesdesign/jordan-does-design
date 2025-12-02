@@ -54,9 +54,9 @@ const CanvaTemplates = () => {
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="h-80 flex items-center justify-center overflow-hidden">
-              <img src={mealPlanTemplate} alt="Weekly Meal Plan Template" className="w-full h-full object-cover" />
+              <img src={mealPlanTemplate} alt="Weekly Meal Plan Template" className="w-full h-full object-contain" />
             </div>
-            <div className="bg-background border-2 border-primary p-8">
+            <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
               <p className="text-muted-foreground">
                 Hi I'm a bit of designer in house Logos, Social Campaign, & 
