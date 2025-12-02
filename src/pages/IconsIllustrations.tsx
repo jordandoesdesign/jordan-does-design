@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import illustrationItems from "@/assets/illustration-items.png";
 import lasagnaIllustration from "@/assets/lasagna-illustration.png";
+import iceCreamIllustration from "@/assets/ice-cream-illustration.png";
+import characterSketches from "@/assets/character-sketches.png";
+import pattern1 from "@/assets/pattern-1.png";
+import pattern2 from "@/assets/pattern-2.png";
+import pattern3 from "@/assets/pattern-3.png";
 
 const IconsIllustrations = () => {
   const seeAlsoProjects = [
@@ -30,7 +35,7 @@ const IconsIllustrations = () => {
 
           {/* First Illustration Grid */}
           <div className="mb-16">
-            <img src={illustrationItems} alt="Illustration Items" className="w-full max-w-2xl mx-auto rounded-3xl shadow-lg mb-8" />
+            <img src={illustrationItems} alt="Illustration Items" className="w-full max-w-2xl mx-auto shadow-lg mb-8" />
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
@@ -41,13 +46,13 @@ const IconsIllustrations = () => {
           {/* Lasagna Illustration Section */}
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img src={lasagnaIllustration} alt="Lasagna Illustration" className="rounded-3xl shadow-lg" />
+              <img src={lasagnaIllustration} alt="Lasagna Illustration" className="shadow-lg w-full h-auto" />
               <div className="space-y-6">
-                <div className="bg-muted rounded-3xl h-40 flex items-center justify-center">
-                  <span className="text-muted-foreground">Ice Cream Illustration</span>
+                <div className="h-40 flex items-center justify-center overflow-hidden">
+                  <img src={iceCreamIllustration} alt="Ice Cream Illustration" className="w-full h-full object-contain" />
                 </div>
-                <div className="bg-muted rounded-3xl h-40 flex items-center justify-center">
-                  <span className="text-muted-foreground">Character Sketches</span>
+                <div className="h-40 flex items-center justify-center overflow-hidden">
+                  <img src={characterSketches} alt="Character Sketches" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -60,14 +65,14 @@ const IconsIllustrations = () => {
 
           {/* Pattern Designs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-muted rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-muted-foreground">Pattern 1</span>
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              <img src={pattern1} alt="Pattern 1" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-muted rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-muted-foreground">Pattern 2</span>
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              <img src={pattern2} alt="Pattern 2" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-muted rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-muted-foreground">Pattern 3</span>
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              <img src={pattern3} alt="Pattern 3" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -78,8 +83,8 @@ const IconsIllustrations = () => {
 
           {/* Large Illustration Showcase */}
           <div className="mb-24">
-            <div className="bg-background rounded-3xl border-2 border-muted p-12 flex items-center justify-center min-h-96">
-              <img src={illustrationItems} alt="Full Illustration Set" className="w-full max-w-3xl rounded-2xl" />
+            <div className="bg-background border-2 border-muted p-12 flex items-center justify-center min-h-96">
+              <img src={illustrationItems} alt="Full Illustration Set" className="w-full max-w-3xl" />
             </div>
           </div>
 
@@ -93,7 +98,7 @@ const IconsIllustrations = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">

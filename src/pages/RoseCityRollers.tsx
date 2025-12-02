@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import roseCityRollers from "@/assets/rose-city-rollers.png";
+import rollersEventPoster from "@/assets/rollers-event-poster.png";
+import rollersBracket from "@/assets/rollers-bracket.png";
+import rollersBootcamp from "@/assets/rollers-bootcamp.png";
 
 const RoseCityRollers = () => {
   const seeAlsoProjects = [
@@ -39,7 +42,7 @@ const RoseCityRollers = () => {
           {/* Event Logo Section */}
           <div className="mb-24">
             <div className="mb-12">
-              <img src={roseCityRollers} alt="Rose City Rollers Event Graphics" className="w-full rounded-3xl shadow-lg mb-8" />
+              <img src={roseCityRollers} alt="Rose City Rollers Event Graphics" className="w-full shadow-lg mb-8" />
             </div>
 
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-8">
@@ -56,19 +59,19 @@ const RoseCityRollers = () => {
 
             {/* Campaign Assets Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-[#C8B5E8] rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-foreground">Event Logo</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-cover" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-primary rounded-full w-32 h-32 flex items-center justify-center mx-auto">
                   <span className="text-primary-foreground text-sm font-bold">Badge</span>
                 </div>
-                <div className="bg-[#C8B5E8] rounded-3xl h-48"></div>
+                <div className="bg-[#C8B5E8] h-48"></div>
               </div>
             </div>
 
-            <div className="bg-[#C8B5E8] rounded-3xl h-96 mb-16 flex items-center justify-center">
-              <span className="text-foreground">Tournament Bracket</span>
+            <div className="h-96 mb-16 flex items-center justify-center overflow-hidden">
+              <img src={rollersBracket} alt="Tournament Bracket" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -87,14 +90,14 @@ const RoseCityRollers = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-[#E0F4E8] rounded-3xl h-80 flex items-center justify-center">
-                <span className="text-muted-foreground">Event Poster</span>
+              <div className="h-80 flex items-center justify-center overflow-hidden">
+                <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-cover" />
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-muted rounded-3xl h-36"></div>
-                <div className="bg-muted rounded-3xl h-36"></div>
-                <div className="bg-muted rounded-3xl h-36"></div>
-                <div className="bg-[#F5F0B8] rounded-3xl h-36"></div>
+                <div className="bg-muted h-36"></div>
+                <div className="bg-muted h-36"></div>
+                <div className="bg-muted h-36"></div>
+                <div className="bg-[#F5F0B8] h-36"></div>
               </div>
             </div>
           </div>
@@ -113,13 +116,13 @@ const RoseCityRollers = () => {
               est, eget convallis tortor.
             </p>
 
-            <div className="bg-[#C8B5E8] rounded-3xl h-96 mb-8 flex items-center justify-center">
-              <span className="text-foreground">Tournament Hero Image</span>
+            <div className="h-96 mb-8 flex items-center justify-center overflow-hidden">
+              <img src={rollersEventPoster} alt="Tournament Hero Image" className="w-full h-full object-cover" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-muted rounded-3xl h-64"></div>
-              <div className="bg-muted rounded-3xl h-64"></div>
+              <div className="bg-muted h-64"></div>
+              <div className="bg-muted h-64"></div>
             </div>
           </div>
 
@@ -128,7 +131,7 @@ const RoseCityRollers = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">

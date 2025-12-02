@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import surriLogo from "@/assets/surri-logo.png";
+import surriTagMockup from "@/assets/surri-tag-mockup.png";
+import surriBagMockup from "@/assets/surri-bag-mockup.png";
 
 const SurrBrand = () => {
   const seeAlsoProjects = [
@@ -40,12 +42,12 @@ const SurrBrand = () => {
           {/* Brand Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#FFE8E0] rounded-3xl h-32"></div>
-              <div className="bg-[#F5B052] rounded-3xl h-32"></div>
-              <div className="bg-[#1B2B5E] rounded-3xl h-32"></div>
-              <div className="bg-muted rounded-3xl h-32"></div>
+              <div className="bg-[#FFE8E0] h-32"></div>
+              <div className="bg-[#F5B052] h-32"></div>
+              <div className="bg-[#1B2B5E] h-32"></div>
+              <div className="bg-muted h-32"></div>
             </div>
-            <div className="bg-background rounded-3xl border-2 border-primary p-8 flex items-center justify-center">
+            <div className="bg-background border-2 border-primary p-8 flex items-center justify-center">
               <img src={surriLogo} alt="SURRI 1207 Logo" className="w-64 h-64 object-contain" />
             </div>
           </div>
@@ -63,28 +65,28 @@ const SurrBrand = () => {
           </p>
 
           {/* Mockup Section */}
-          <div className="bg-[#5A8C7E] rounded-3xl p-16 mb-16 flex items-center justify-center min-h-96">
-            <div className="bg-background rounded-2xl p-8 max-w-md">
-              <span className="text-muted-foreground">Product Mockup</span>
+          <div className="bg-[#5A8C7E] p-16 mb-16 flex items-center justify-center min-h-96">
+            <div className="bg-background p-8 max-w-md">
+              <img src={surriLogo} alt="Product Mockup" className="w-full h-auto" />
             </div>
           </div>
 
           {/* Color Palette Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <div className="space-y-4">
-              <div className="bg-[#FFB8A8] rounded-3xl h-48"></div>
+              <div className="bg-[#FFB8A8] h-48"></div>
               <p className="text-sm text-muted-foreground text-center">Color 1</p>
             </div>
             <div className="space-y-4">
-              <div className="bg-[#5A8C7E] rounded-3xl h-48"></div>
+              <div className="bg-[#5A8C7E] h-48"></div>
               <p className="text-sm text-muted-foreground text-center">Color 2</p>
             </div>
             <div className="space-y-4">
-              <div className="bg-[#F5B052] rounded-3xl h-48"></div>
+              <div className="bg-[#F5B052] h-48"></div>
               <p className="text-sm text-muted-foreground text-center">Color 3</p>
             </div>
             <div className="space-y-4">
-              <div className="bg-[#1B2B5E] rounded-3xl h-48"></div>
+              <div className="bg-[#1B2B5E] h-48"></div>
               <p className="text-sm text-muted-foreground text-center">Color 4</p>
             </div>
           </div>
@@ -96,11 +98,11 @@ const SurrBrand = () => {
           <p className="text-center text-muted-foreground mb-8">handmade in</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-muted-foreground">Product Tag Mockup</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden">
+              <img src={surriTagMockup} alt="Product Tag Mockup" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-muted-foreground">Shopping Bag Mockup</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden">
+              <img src={surriBagMockup} alt="Shopping Bag Mockup" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -111,7 +113,7 @@ const SurrBrand = () => {
 
           {/* Price List */}
           <div className="mb-24 flex justify-center">
-            <div className="bg-[#FFE8E0] rounded-3xl p-12 max-w-md">
+            <div className="bg-[#FFE8E0] p-12 max-w-md">
               <h3 className="text-2xl font-heading font-bold text-center mb-8">PRICES</h3>
               <div className="space-y-2 text-center">
                 <p className="text-muted-foreground">Item pricing list</p>
@@ -124,7 +126,7 @@ const SurrBrand = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">

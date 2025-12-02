@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import pinterestGraphics from "@/assets/pinterest-graphics.png";
+import pinterestPin1 from "@/assets/pinterest-pin-1.png";
+import pinterestPin2 from "@/assets/pinterest-pin-2.png";
+import pinterestPin3 from "@/assets/pinterest-pin-3.png";
+import canvaIcons from "@/assets/canva-icons.png";
+import templateWithIcons from "@/assets/template-with-icons.png";
 
 const PinterestGraphics = () => {
   const seeAlsoProjects = [
@@ -37,9 +42,9 @@ const PinterestGraphics = () => {
           {/* First Pinterest Graphics Showcase */}
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <img src={pinterestGraphics} alt="Pinterest Graphics" className="rounded-3xl shadow-lg" />
-              <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-                <span className="text-muted-foreground">Pinterest Pin</span>
+              <img src={pinterestGraphics} alt="Pinterest Graphics" className="shadow-lg w-full h-auto" />
+              <div className="h-96 flex items-center justify-center overflow-hidden">
+                <img src={pinterestPin1} alt="Pinterest Pin" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -54,12 +59,16 @@ const PinterestGraphics = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex justify-center">
                 <div className="bg-primary rounded-full w-48 h-48 flex items-center justify-center">
-                  <span className="text-primary-foreground text-xl font-bold">Canva<br/>Templates</span>
+                  <span className="text-primary-foreground text-xl font-bold text-center">Canva<br/>Templates</span>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-muted rounded-3xl h-48"></div>
-                <div className="bg-muted rounded-3xl h-48"></div>
+                <div className="h-48 overflow-hidden">
+                  <img src={pinterestPin2} alt="Pinterest Template" className="w-full h-full object-cover" />
+                </div>
+                <div className="h-48 overflow-hidden">
+                  <img src={pinterestPin3} alt="Pinterest Template" className="w-full h-full object-cover" />
+                </div>
               </div>
             </div>
           </div>
@@ -71,14 +80,14 @@ const PinterestGraphics = () => {
 
           {/* Three Pinterest Pins Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-muted-foreground">Pinterest Pin 1</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden">
+              <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-muted-foreground">Pinterest Pin 2</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden">
+              <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-muted rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-muted-foreground">Pinterest Pin 3</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden">
+              <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -92,11 +101,11 @@ const PinterestGraphics = () => {
               est, eget convallis tortor.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-muted rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-muted-foreground">Icon Set</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={canvaIcons} alt="Icon Set" className="w-full h-full object-cover" />
               </div>
-              <div className="bg-muted rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-muted-foreground">Template with Icons</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -106,7 +115,7 @@ const PinterestGraphics = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">

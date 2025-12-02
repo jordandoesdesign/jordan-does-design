@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import greenroomLogo from "@/assets/greenroom-logo.png";
+import logoGrid from "@/assets/logo-grid.png";
 const LogoDesigns = () => {
   const initialLogos = [{
     name: "Greenroom",
@@ -68,7 +69,7 @@ const LogoDesigns = () => {
           {/* Initial Logo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {initialLogos.map((logo, index) => <div key={index} className="space-y-4">
-                <div className={`${logo.bg} rounded-3xl h-64 flex items-center justify-center p-8`}>
+                <div className={`${logo.bg} h-64 flex items-center justify-center p-8`}>
                   <span className="text-foreground text-xl font-semibold">{logo.name}</span>
                 </div>
                 <div>
@@ -98,22 +99,22 @@ const LogoDesigns = () => {
 
             {/* Greenroom Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-[#1F3A2E] rounded-3xl h-80 flex items-center justify-center p-8">
+              <div className="bg-[#1F3A2E] h-80 flex items-center justify-center p-8">
                 <img src={greenroomLogo} alt="Greenroom Logo" className="w-full h-full object-contain" />
               </div>
-              <div className="bg-[#E8F4E8] rounded-3xl h-80 flex items-center justify-center">
+              <div className="bg-[#E8F4E8] h-80 flex items-center justify-center">
                 <span className="text-[#1F3A2E] text-xl font-semibold">T-Shirt Mockup</span>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-background rounded-3xl h-64 flex items-center justify-center border-2 border-muted">
+              <div className="bg-background h-64 flex items-center justify-center border-2 border-muted">
                 <span className="text-muted-foreground">Decorative Elements</span>
               </div>
-              <div className="bg-background rounded-3xl h-64 flex items-center justify-center border-2 border-muted">
+              <div className="bg-background h-64 flex items-center justify-center border-2 border-muted">
                 <span className="text-muted-foreground">Color Palette</span>
               </div>
-              <div className="bg-[#F5B052] rounded-3xl h-64 flex items-center justify-center">
+              <div className="bg-[#F5B052] h-64 flex items-center justify-center">
                 <span className="text-foreground">Brand Assets</span>
               </div>
             </div>
@@ -139,13 +140,13 @@ const LogoDesigns = () => {
 
             {/* Peralta Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-background rounded-3xl h-80 flex items-center justify-center border-2 border-muted p-8">
-                
+              <div className="bg-background h-80 flex items-center justify-center border-2 border-muted p-8">
+                <img src={logoGrid} alt="Logo Grid" className="w-full h-full object-contain" />
               </div>
-              <div className="bg-gradient-to-b from-[#8B6B47] to-[#2C1810] rounded-3xl h-80"></div>
+              <div className="bg-gradient-to-b from-[#8B6B47] to-[#2C1810] h-80"></div>
             </div>
 
-            <div className="bg-[#F5B052] rounded-3xl h-96 flex items-center justify-center">
+            <div className="bg-[#F5B052] h-96 flex items-center justify-center">
               <span className="text-foreground text-xl">Website Mockup</span>
             </div>
           </div>
@@ -155,7 +156,7 @@ const LogoDesigns = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
