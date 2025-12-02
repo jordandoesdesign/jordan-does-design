@@ -93,7 +93,7 @@ const RoseCityRollers = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div className="h-80 flex items-center justify-center overflow-hidden">
-                <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-cover" />
+                <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-muted h-36"></div>
