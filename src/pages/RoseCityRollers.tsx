@@ -7,16 +7,18 @@ import roseCityRollers from "@/assets/rose-city-rollers.png";
 import rollersEventPoster from "@/assets/rollers-event-poster.png";
 import rollersBracket from "@/assets/rollers-bracket.png";
 import rollersBootcamp from "@/assets/rollers-bootcamp.png";
-
 const RoseCityRollers = () => {
-  const seeAlsoProjects = [
-    { title: "Canva Pinterest Graphics", link: "/work/pinterest-graphics" },
-    { title: "Logo Design & Brand Design", link: "/work/logo-designs" },
-    { title: "Icons & Illustrations", link: "/work/icons-illustrations" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const seeAlsoProjects = [{
+    title: "Canva Pinterest Graphics",
+    link: "/work/pinterest-graphics"
+  }, {
+    title: "Logo Design & Brand Design",
+    link: "/work/logo-designs"
+  }, {
+    title: "Icons & Illustrations",
+    link: "/work/icons-illustrations"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
@@ -71,7 +73,7 @@ const RoseCityRollers = () => {
             </div>
 
             <div className="h-96 mb-16 flex items-center justify-center overflow-hidden">
-              <img src={rollersBracket} alt="Tournament Bracket" className="w-full h-full object-cover" />
+              <img src={rollersBracket} alt="Tournament Bracket" className="w-full h-full object-contain" />
             </div>
           </div>
 
@@ -130,16 +132,14 @@ const RoseCityRollers = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -162,8 +162,6 @@ const RoseCityRollers = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default RoseCityRollers;
