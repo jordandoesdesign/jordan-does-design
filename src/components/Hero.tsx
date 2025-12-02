@@ -34,7 +34,7 @@ const Hero = () => {
           {/* Character Illustration */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md h-96 bg-muted overflow-hidden">
-              <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
+              <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
