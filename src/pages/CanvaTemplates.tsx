@@ -8,16 +8,18 @@ import mealPlanTemplate from "@/assets/meal-plan-template.png";
 import pinterestPin1 from "@/assets/pinterest-pin-1.png";
 import pinterestPin2 from "@/assets/pinterest-pin-2.png";
 import pinterestPin3 from "@/assets/pinterest-pin-3.png";
-
 const CanvaTemplates = () => {
-  const seeAlsoProjects = [
-    { title: "Logo Design & Brand Design", link: "/work/logo-designs" },
-    { title: "Canva Pinterest Graphics", link: "/work/pinterest-graphics" },
-    { title: "Brand Design: SURRI", link: "/work/surr-brand" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const seeAlsoProjects = [{
+    title: "Logo Design & Brand Design",
+    link: "/work/logo-designs"
+  }, {
+    title: "Canva Pinterest Graphics",
+    link: "/work/pinterest-graphics"
+  }, {
+    title: "Brand Design: SURRI",
+    link: "/work/surr-brand"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
@@ -30,8 +32,8 @@ const CanvaTemplates = () => {
           </h1>
           
           <div className="flex flex-wrap justify-center gap-4 text-sm text-primary mb-12">
-            <span className="text-base">✿ Weekly Meal Plans ✿</span>
-            <span className="text-base">Pinterest Templates ✿</span>
+            <span className="text-base">✿  Weekly Meal Plans   ✿</span>
+            <span className="text-base">Pinterest Templates  ✿</span>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
@@ -85,16 +87,14 @@ const CanvaTemplates = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -117,8 +117,6 @@ const CanvaTemplates = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CanvaTemplates;
