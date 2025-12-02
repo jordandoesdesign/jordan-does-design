@@ -44,7 +44,7 @@ const RoseCityRollers = () => {
           {/* Event Logo Section */}
           <div className="mb-24">
             <div className="mb-12">
-              <img src={roseCityRollers} alt="Rose City Rollers Event Graphics" className="w-full shadow-lg mb-8" />
+              <img src={roseCityRollers} alt="Rose City Rollers Event Graphics" className="w-full shadow-lg mb-8 object-scale-down" />
             </div>
 
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-8">
