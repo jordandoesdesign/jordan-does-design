@@ -72,13 +72,13 @@ const CanvaTemplates = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-cover" />
+                <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
               </div>
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-cover" />
+                <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
               </div>
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-cover" />
+                <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
