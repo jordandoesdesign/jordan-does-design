@@ -47,11 +47,16 @@ const LogoDesigns = () => {
     client: "Tech Startup",
     bg: "bg-[#D4EFEF]"
   }];
-  const seeAlsoProjects = [
-    { title: "Canva Template Design", link: "/work/canva-templates" },
-    { title: "Social Media Event Templates • Rose City Rollers", link: "/work/rose-city-rollers" },
-    { title: "Icons & Illustrations", link: "/work/icons-illustrations" }
-  ];
+  const seeAlsoProjects = [{
+    title: "Canva Template Design",
+    link: "/work/canva-templates"
+  }, {
+    title: "Social Media Event Templates • Rose City Rollers",
+    link: "/work/rose-city-rollers"
+  }, {
+    title: "Icons & Illustrations",
+    link: "/work/icons-illustrations"
+  }];
   return <div className="min-h-screen bg-background">
       <Navigation />
       
@@ -141,7 +146,7 @@ const LogoDesigns = () => {
             {/* Peralta Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-background h-80 flex items-center justify-center border-2 border-muted p-8">
-                <img src={logoGrid} alt="Logo Grid" className="w-full h-full object-contain" />
+                <img alt="Logo Grid" className="w-full h-full object-contain" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" />
               </div>
               <div className="bg-gradient-to-b from-[#8B6B47] to-[#2C1810] h-80"></div>
             </div>
@@ -155,16 +160,14 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
