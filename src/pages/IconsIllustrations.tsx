@@ -10,16 +10,18 @@ import characterSketches from "@/assets/character-sketches.png";
 import pattern1 from "@/assets/pattern-1.png";
 import pattern2 from "@/assets/pattern-2.png";
 import pattern3 from "@/assets/pattern-3.png";
-
 const IconsIllustrations = () => {
-  const seeAlsoProjects = [
-    { title: "Canva Template Design", link: "/work/canva-templates" },
-    { title: "Canva Pinterest Graphics", link: "/work/pinterest-graphics" },
-    { title: "Brand Design: SURRI", link: "/work/surr-brand" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const seeAlsoProjects = [{
+    title: "Canva Template Design",
+    link: "/work/canva-templates"
+  }, {
+    title: "Canva Pinterest Graphics",
+    link: "/work/pinterest-graphics"
+  }, {
+    title: "Brand Design: SURRI",
+    link: "/work/surr-brand"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
@@ -52,7 +54,7 @@ const IconsIllustrations = () => {
                   <img src={iceCreamIllustration} alt="Ice Cream Illustration" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-40 flex items-center justify-center overflow-hidden">
-                  <img src={characterSketches} alt="Character Sketches" className="w-full h-full object-cover" />
+                  <img src={characterSketches} alt="Character Sketches" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
@@ -97,16 +99,14 @@ const IconsIllustrations = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -129,8 +129,6 @@ const IconsIllustrations = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default IconsIllustrations;
