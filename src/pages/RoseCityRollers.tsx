@@ -62,7 +62,7 @@ const RoseCityRollers = () => {
             {/* Campaign Assets Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-cover" />
+                <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-primary rounded-full w-32 h-32 flex items-center justify-center mx-auto">
