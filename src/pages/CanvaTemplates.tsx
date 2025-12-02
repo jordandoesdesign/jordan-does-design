@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import canvaMealPlan from "@/assets/canva-meal-plan.png";
+import mealPlanTemplate from "@/assets/meal-plan-template.png";
+import pinterestPin1 from "@/assets/pinterest-pin-1.png";
+import pinterestPin2 from "@/assets/pinterest-pin-2.png";
+import pinterestPin3 from "@/assets/pinterest-pin-3.png";
 
 const CanvaTemplates = () => {
   const seeAlsoProjects = [
@@ -37,7 +41,7 @@ const CanvaTemplates = () => {
 
           {/* Main Template Image */}
           <div className="mb-16">
-            <img src={canvaMealPlan} alt="Weekly Meal Plan Template" className="w-full max-w-2xl mx-auto rounded-3xl shadow-lg" />
+            <img src={canvaMealPlan} alt="Weekly Meal Plan Template" className="w-full max-w-2xl mx-auto shadow-lg" />
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
@@ -47,10 +51,10 @@ const CanvaTemplates = () => {
 
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-muted rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-muted-foreground">Weekly Meal Plan Template</span>
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              <img src={mealPlanTemplate} alt="Weekly Meal Plan Template" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-background rounded-3xl border-2 border-primary p-8">
+            <div className="bg-background border-2 border-primary p-8">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
               <p className="text-muted-foreground">
                 Hi I'm a bit of designer in house Logos, Social Campaign, & 
@@ -65,14 +69,14 @@ const CanvaTemplates = () => {
               Pinterest Templates in Canva
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-muted rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-muted-foreground">Pinterest Pin 1</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-cover" />
               </div>
-              <div className="bg-muted rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-muted-foreground">Pinterest Pin 2</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-cover" />
               </div>
-              <div className="bg-muted rounded-3xl h-64 flex items-center justify-center">
-                <span className="text-muted-foreground">Pinterest Pin 3</span>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -82,7 +86,7 @@ const CanvaTemplates = () => {
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] rounded-3xl p-8 h-64 flex flex-col justify-between">
+                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">

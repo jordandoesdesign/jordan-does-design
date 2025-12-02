@@ -69,7 +69,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
     <div className="group">
       {/* Image Area */}
       <Link to={project.link}>
-        <div className="bg-muted rounded-3xl overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer h-80">
+        <div className="bg-muted overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer h-80">
           <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
         </div>
       </Link>
