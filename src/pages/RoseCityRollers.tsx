@@ -119,7 +119,7 @@ const RoseCityRollers = () => {
             </p>
 
             <div className="h-96 mb-8 flex items-center justify-center overflow-hidden">
-              <img src={rollersEventPoster} alt="Tournament Hero Image" className="w-full h-full object-cover" />
+              <img alt="Tournament Hero Image" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
