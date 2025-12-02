@@ -7,50 +7,45 @@ import surriMockup from "@/assets/surri-mockup.png";
 import pinterestCollection from "@/assets/pinterest-collection.png";
 import rollersSocial from "@/assets/rollers-social.png";
 import illustrationCollection from "@/assets/illustration-collection.png";
-const projects = [
-  {
-    id: 1,
-    title: "Logo Design & Brand Design",
-    description: "Logo & Brand Design Strategy",
-    link: "/work/logo-designs"
-  },
-  {
-    id: 2,
-    title: "Canva Template Design",
-    description: "Editable templates for a food blogger who shares weekly meal plans on social media",
-    link: "/work/canva-templates"
-  },
-  {
-    id: 3,
-    title: "Brand Design: SURRI",
-    description: "Logo & brand created for a small business that sells handmade consumer goods",
-    link: "/work/surr-brand"
-  },
-  {
-    id: 4,
-    title: "Canva Pinterest Graphics",
-    description: "Easy to edit Pinterest templates for a blogger who loves to create content in Canva",
-    link: "/work/pinterest-graphics"
-  },
-  {
-    id: 5,
-    title: "Social Media Event Templates • Rose City Rollers",
-    description: "Social Media Design for Events & Tournaments",
-    link: "/work/rose-city-rollers"
-  },
-  {
-    id: 6,
-    title: "Icons & Illustrations",
-    description: "Custom Illustration Projects",
-    link: "/work/icons-illustrations"
-  }
-];
+const projects = [{
+  id: 1,
+  title: "Logo Design & Brand Design",
+  description: "Logo & Brand Design Strategy",
+  link: "/work/logo-designs"
+}, {
+  id: 2,
+  title: "Canva Template Design",
+  description: "Editable templates for a food blogger who shares weekly meal plans on social media",
+  link: "/work/canva-templates"
+}, {
+  id: 3,
+  title: "Brand Design: SURRI",
+  description: "Logo & brand created for a small business that sells handmade consumer goods",
+  link: "/work/surr-brand"
+}, {
+  id: 4,
+  title: "Canva Pinterest Graphics",
+  description: "Easy to edit Pinterest templates for a blogger who loves to create content in Canva",
+  link: "/work/pinterest-graphics"
+}, {
+  id: 5,
+  title: "Social Media Event Templates • Rose City Rollers",
+  description: "Social Media Design for Events & Tournaments",
+  link: "/work/rose-city-rollers"
+}, {
+  id: 6,
+  title: "Icons & Illustrations",
+  description: "Custom Illustration Projects",
+  link: "/work/icons-illustrations"
+}];
 const ProjectCard = ({
   project
 }: {
   project: typeof projects[0];
 }) => {
-  const imageMap: { [key: number]: string } = {
+  const imageMap: {
+    [key: number]: string;
+  } = {
     1: logoGrid,
     2: canvaMealPlan,
     3: surriMockup,
@@ -58,11 +53,10 @@ const ProjectCard = ({
     5: rollersSocial,
     6: illustrationCollection
   };
-  
   return <div className="group">
       <Link to={project.link}>
         <div className="bg-muted overflow-hidden mb-4 transition-transform duration-300 hover:scale-105 h-64 cursor-pointer">
-          <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
+          <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-contain" />
         </div>
       </Link>
       <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
