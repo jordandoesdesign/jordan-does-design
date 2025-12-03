@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import greenroomLogo from "@/assets/greenroom-logo.png";
@@ -16,57 +17,58 @@ import logoMutch from "@/assets/assets_Logo-LM.png";
 import logoSushiBar from "@/assets/assets_Logo-Edo.png";
 import logoFastLab from "@/assets/assets_Logo-FastLab.png";
 const LogoDesigns = () => {
-  const initialLogos = [{
-    name: "Greenroom",
-    client: "Local Frozen Treats + More",
-    bg: "bg-[#E8F4E8]",
-    image: logoGreenroom
-  }, {
-    name: "SOLANA",
-    client: "Medspa",
-    bg: "bg-[#1B2B5E]",
-    image: logoSoluna
-  }, {
-    name: "Peralta",
-    client: "Mexican Restaurant",
-    bg: "bg-[#F5B052]",
-    image: logoPeralta
-  }, {
-    name: "Frugal Feasts",
-    client: "Recipe Blog",
-    bg: "bg-[#F0F4E8]",
-    image: logoFrugalFeasts
-  }, {
-    name: "Better Together",
-    client: "Community Market",
-    bg: "bg-[#E8D8F0]",
-    image: logoBetterTogether
-  }, {
-    name: "Boulevard",
-    client: "Fashion Boutique",
-    bg: "bg-[#E0F4F4]",
-    image: logoBoulevard
-  }, {
-    name: "The Red Wolf Inn",
-    client: "Bed & Breakfast",
-    bg: "bg-background",
-    image: logoRedWolfInn
-  }, {
-    name: "MUTCH",
-    client: "Sports Brand",
-    bg: "bg-[#F25C54]",
-    image: logoMutch
-  }, {
-    name: "Sushi Bar",
-    client: "Local Restaurant",
-    bg: "bg-[#B8C77E]",
-    image: logoSushiBar
-  }, {
-    name: "Fast Lab",
-    client: "Tech Startup",
-    bg: "bg-[#D4EFEF]",
-    image: logoFastLab
-  }];
+  const initialLogos = [
+    {
+      name: "Greenroom",
+      client: "Flower Delivery Service",
+      image: logoGreenroom,
+    },
+    {
+      name: "Soluna",
+      client: "Luxury Fashion",
+      image: logoSoluna,
+    },
+    {
+      name: "Peralta",
+      client: "Luxury Fashion",
+      image: logoPeralta,
+    },
+    {
+      name: "Frugal Feasts",
+      client: "Food & Lifestyle",
+      image: logoFrugalFeasts,
+    },
+    {
+      name: "Hometown Throwdown",
+      client: "Roller Derby Tournament",
+      image: logoBetterTogether,
+    },
+    {
+      name: "Boulevard Boutique",
+      client: "Luxury Fashion",
+      image: logoBoulevard,
+    },
+    {
+      name: "Little Red Writing",
+      client: "Content Writing",
+      image: logoRedWolfInn,
+    },
+    {
+      name: "Mutch",
+      client: "Fitness & Personal Training",
+      image: logoMutch,
+    },
+    {
+      name: "Edo",
+      client: "Sushi Bar",
+      image: logoSushiBar,
+    },
+    {
+      name: "Fast Lab",
+      client: "Fitness & Mobility Training",
+      image: logoFastLab,
+    },
+  ];
   const seeAlsoProjects = [{
     title: "Canva Template Design",
     link: "/work/canva-templates"
@@ -93,54 +95,56 @@ const LogoDesigns = () => {
 
           {/* Initial Logo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-            {initialLogos.map((logo, index) => <div key={index} className="space-y-4">
-                <div className={`${logo.bg} h-64 flex items-center justify-center p-8`}>
-                  <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
+            {initialLogos.map((logo, index) => (
+              <div key={index} className="space-y-4 flex flex-col items-start">
+                <div className="w-full max-w-xs md:max-w-sm overflow-hidden">
+                  <AspectRatio ratio={1}>
+                    <img
+                      src={logo.image}
+                      alt={`${logo.name} logo`}
+                      className="w-full h-full object-contain"
+                    />
+                  </AspectRatio>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-primary">Fast Lab</p>
+                  <p className="text-sm font-semibold text-primary">{logo.name}</p>
                   <p className="text-sm text-muted-foreground">{logo.client}</p>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
 
           {/* Greenroom Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">Greenroom</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">
+                Greenroom
+              </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
                 <span className="text-base">Logo Design</span>
                 <span className="text-base">✿</span>
                 <span className="text-base">Brand Design</span>
                 <span className="text-base">✿</span>
-                <span className="text-base">Brand Design Brand Style Guides</span>
+                <span className="text-base">Brand Style Guides</span>
               </div>
             </div>
 
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium
               est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
             </p>
 
-            {/* Greenroom Images Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-[#1F3A2E] h-80 flex items-center justify-center p-8">
-                <img src={greenroomLogo} alt="Greenroom Logo" className="w-full h-full object-contain" />
+            {/* Greenroom Images */}
+            <div className="space-y-8">
+              <div className="h-80 flex items-center justify-center border-2 border-muted">
+                <span className="text-muted-foreground text-sm">Image placeholder</span>
               </div>
-              <div className="bg-[#E8F4E8] h-80 flex items-center justify-center">
-                <span className="text-[#1F3A2E] text-xl font-semibold">T-Shirt Mockup</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-background h-64 flex items-center justify-center border-2 border-muted">
-                <span className="text-muted-foreground">Decorative Elements</span>
-              </div>
-              <div className="bg-background h-64 flex items-center justify-center border-2 border-muted">
-                <span className="text-muted-foreground">Color Palette</span>
-              </div>
-              <div className="bg-[#F5B052] h-64 flex items-center justify-center">
-                <span className="text-foreground">Brand Assets</span>
+              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+                <img
+                  src={greenroomLogo}
+                  alt="Greenroom brand artwork"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
@@ -148,31 +152,42 @@ const LogoDesigns = () => {
           {/* Peralta Case Study */}
           <div className="mb-24">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Peralta</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
+                Peralta
+              </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
                 <span className="text-base">Logo Design</span>
                 <span className="text-base">✿</span>
                 <span className="text-base">Brand Design</span>
-                
-                
               </div>
             </div>
 
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium
               est, eget convallis tortor.
             </p>
 
-            {/* Peralta Images Grid */}
+            {/* Peralta Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-background h-80 flex items-center justify-center border-2 border-muted p-8">
-                <img alt="Logo Grid" className="w-full h-full object-contain" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" />
+              <div className="h-80 flex items-center justify-center border-2 border-muted">
+                <span className="text-muted-foreground text-sm">Image placeholder</span>
               </div>
-              <div className="bg-gradient-to-b from-[#8B6B47] to-[#2C1810] h-80"></div>
+              <div className="grid grid-rows-2 gap-4 h-80">
+                <div className="flex items-center justify-center border-2 border-muted">
+                  <span className="text-muted-foreground text-sm">Image placeholder</span>
+                </div>
+                <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
+                  <img
+                    alt="Peralta brand mockup"
+                    className="w-full h-full object-contain"
+                    src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png"
+                  />
+                </div>
+              </div>
             </div>
 
-            <div className="bg-[#F5B052] h-96 flex items-center justify-center">
-              <span className="text-foreground text-xl">Website Mockup</span>
+            <div className="h-96 flex items-center justify-center border-2 border-muted">
+              <span className="text-muted-foreground text-sm">Image placeholder</span>
             </div>
           </div>
 
