@@ -68,13 +68,13 @@ const IconsIllustrations = () => {
           {/* Pattern Designs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="h-80 flex items-center justify-center overflow-hidden">
-              <img src={pattern1} alt="Pattern 1" className="w-full h-full object-cover" />
+              
             </div>
             <div className="h-80 flex items-center justify-center overflow-hidden">
-              <img src={pattern2} alt="Pattern 2" className="w-full h-full object-cover" />
+              <img src={pattern2} alt="Pattern 2" className="w-full h-full object-contain" />
             </div>
             <div className="h-80 flex items-center justify-center overflow-hidden">
-              <img src={pattern3} alt="Pattern 3" className="w-full h-full object-cover" />
+              
             </div>
           </div>
 
