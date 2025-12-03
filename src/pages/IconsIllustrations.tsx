@@ -85,15 +85,10 @@ const IconsIllustrations = () => {
 
           {/* Large Illustration Showcase */}
           <div className="mb-24">
-            <div className="bg-background border-2 border-muted p-12 flex items-center justify-center min-h-96">
-              <img src={illustrationItems} alt="Full Illustration Set" className="w-full max-w-3xl" />
-            </div>
+            
           </div>
 
-          <p className="text-center text-muted-foreground mb-24 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-            est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
-          </p>
+          
 
           {/* See Also Section */}
           <div className="mb-24">
