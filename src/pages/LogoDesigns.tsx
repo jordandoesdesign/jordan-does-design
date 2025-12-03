@@ -16,68 +16,57 @@ import logoMutch from "@/assets/assets_Logo-LM.png";
 import logoSushiBar from "@/assets/assets_Logo-Edo.png";
 import logoFastLab from "@/assets/assets_Logo-FastLab.png";
 const LogoDesigns = () => {
-  const initialLogos = [
-    {
-      name: "Greenroom",
-      client: "Local Frozen Treats + More",
-      bg: "bg-[#E8F4E8]",
-      image: logoGreenroom,
-    },
-    {
-      name: "SOLANA",
-      client: "Medspa",
-      bg: "bg-[#1B2B5E]",
-      image: logoSoluna,
-    },
-    {
-      name: "Peralta",
-      client: "Mexican Restaurant",
-      bg: "bg-[#F5B052]",
-      image: logoPeralta,
-    },
-    {
-      name: "Frugal Feasts",
-      client: "Recipe Blog",
-      bg: "bg-[#F0F4E8]",
-      image: logoFrugalFeasts,
-    },
-    {
-      name: "Better Together",
-      client: "Community Market",
-      bg: "bg-[#E8D8F0]",
-      image: logoBetterTogether,
-    },
-    {
-      name: "Boulevard",
-      client: "Fashion Boutique",
-      bg: "bg-[#E0F4F4]",
-      image: logoBoulevard,
-    },
-    {
-      name: "The Red Wolf Inn",
-      client: "Bed & Breakfast",
-      bg: "bg-background",
-      image: logoRedWolfInn,
-    },
-    {
-      name: "MUTCH",
-      client: "Sports Brand",
-      bg: "bg-[#F25C54]",
-      image: logoMutch,
-    },
-    {
-      name: "Sushi Bar",
-      client: "Local Restaurant",
-      bg: "bg-[#B8C77E]",
-      image: logoSushiBar,
-    },
-    {
-      name: "Fast Lab",
-      client: "Tech Startup",
-      bg: "bg-[#D4EFEF]",
-      image: logoFastLab,
-    },
-  ];
+  const initialLogos = [{
+    name: "Greenroom",
+    client: "Local Frozen Treats + More",
+    bg: "bg-[#E8F4E8]",
+    image: logoGreenroom
+  }, {
+    name: "SOLANA",
+    client: "Medspa",
+    bg: "bg-[#1B2B5E]",
+    image: logoSoluna
+  }, {
+    name: "Peralta",
+    client: "Mexican Restaurant",
+    bg: "bg-[#F5B052]",
+    image: logoPeralta
+  }, {
+    name: "Frugal Feasts",
+    client: "Recipe Blog",
+    bg: "bg-[#F0F4E8]",
+    image: logoFrugalFeasts
+  }, {
+    name: "Better Together",
+    client: "Community Market",
+    bg: "bg-[#E8D8F0]",
+    image: logoBetterTogether
+  }, {
+    name: "Boulevard",
+    client: "Fashion Boutique",
+    bg: "bg-[#E0F4F4]",
+    image: logoBoulevard
+  }, {
+    name: "The Red Wolf Inn",
+    client: "Bed & Breakfast",
+    bg: "bg-background",
+    image: logoRedWolfInn
+  }, {
+    name: "MUTCH",
+    client: "Sports Brand",
+    bg: "bg-[#F25C54]",
+    image: logoMutch
+  }, {
+    name: "Sushi Bar",
+    client: "Local Restaurant",
+    bg: "bg-[#B8C77E]",
+    image: logoSushiBar
+  }, {
+    name: "Fast Lab",
+    client: "Tech Startup",
+    bg: "bg-[#D4EFEF]",
+    image: logoFastLab
+  }];
   const seeAlsoProjects = [{
     title: "Canva Template Design",
     link: "/work/canva-templates"
@@ -104,21 +93,15 @@ const LogoDesigns = () => {
 
           {/* Initial Logo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-            {initialLogos.map((logo, index) => (
-              <div key={index} className="space-y-4">
+            {initialLogos.map((logo, index) => <div key={index} className="space-y-4">
                 <div className={`${logo.bg} h-64 flex items-center justify-center p-8`}>
-                  <img
-                    src={logo.image}
-                    alt={`${logo.name} logo`}
-                    className="w-full h-full object-contain"
-                  />
+                  <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">Fast Lab</p>
                   <p className="text-sm text-muted-foreground">{logo.client}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Greenroom Case Study */}
