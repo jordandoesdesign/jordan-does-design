@@ -95,7 +95,7 @@ const LogoDesigns = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {initialLogos.map((logo, index) => <div key={index} className="space-y-4">
                 <div className={`${logo.bg} h-64 flex items-center justify-center p-8`}>
-                  <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-cover" />
+                  <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">Fast Lab</p>
