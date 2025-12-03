@@ -47,7 +47,7 @@ const SurrBrand = () => {
               <div className="bg-[#1B2B5E] h-32"></div>
               <div className="bg-muted h-32"></div>
             </div>
-            <div className="bg-background border-2 border-primary p-8 flex items-center justify-center">
+            <div className="border-2 border-primary p-8 flex items-center justify-center">
               <img src={surriLogo} alt="SURRI 1207 Logo" className="w-64 h-64 object-contain" />
             </div>
           </div>
