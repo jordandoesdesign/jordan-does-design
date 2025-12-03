@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import jordanPortrait from "@/assets/jordan-portrait.png";
-
 const About = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ✿ & More! ";
   return <div className="min-h-screen">
@@ -15,7 +14,7 @@ const About = () => {
             {/* Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-full max-w-sm h-80 bg-muted overflow-hidden">
-                <img src={jordanPortrait} alt="Jordan Veirs" className="w-full h-full object-cover" />
+                <img src={jordanPortrait} alt="Jordan Veirs" className="w-full h-full object-contain" />
               </div>
             </div>
 
