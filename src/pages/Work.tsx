@@ -70,7 +70,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
     <div className="group">
       {/* Image Area */}
       <Link to={project.link}>
-        <div className="bg-muted overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+        <div className="overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
           <AspectRatio ratio={40 / 27}>
             <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
           </AspectRatio>

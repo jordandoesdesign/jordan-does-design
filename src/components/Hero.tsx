@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import heroArrow from "@/assets/assets_Arrow.svg";
 import heroCharacter from "@/assets/hero-character.png";
 const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
@@ -26,14 +26,18 @@ const Hero = () => {
             </div>
 
             {/* Arrow Decoration */}
-            <div className="text-primary">
-              <ArrowDown className="w-12 h-12" strokeWidth={2} />
+            <div className="text-primary mt-2">
+              <img
+                src={heroArrow}
+                alt="Curved decorative arrow"
+                className="w-[18px] h-[107px]"
+              />
             </div>
           </div>
 
           {/* Character Illustration */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md h-96 bg-muted overflow-hidden">
+            <div className="w-full max-w-md h-96 overflow-hidden">
               <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
             </div>
           </div>

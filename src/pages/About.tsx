@@ -13,7 +13,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-full max-w-sm h-80 bg-muted overflow-hidden">
+              <div className="w-full max-w-sm h-80 overflow-hidden">
                 <img src={jordanPortrait} alt="Jordan Veirs" className="w-full h-full object-contain" />
               </div>
             </div>
