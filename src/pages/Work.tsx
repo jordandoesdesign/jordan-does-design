@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import logoGrid from "@/assets/logo-grid.png";
@@ -69,8 +70,10 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
     <div className="group">
       {/* Image Area */}
       <Link to={project.link}>
-        <div className="bg-muted overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer h-80">
-          <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
+        <div className="bg-muted overflow-hidden mb-6 transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+          <AspectRatio ratio={40 / 27}>
+            <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
+          </AspectRatio>
         </div>
       </Link>
 
@@ -125,8 +128,8 @@ const Work = () => {
             Ready to bring your vision to life? Get in touch and let's create something amazing.
           </p>
           <a href="mailto:Jordan@JordanVeirs.com">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Mail className="mr-2 h-5 w-5" />
+            <Button size="lg" className="group/btn bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">
+              <Mail className="mr-2 h-5 w-5 transition-transform duration-300 group-hover/btn:-translate-x-0.5" />
               Contact Me
             </Button>
           </a>

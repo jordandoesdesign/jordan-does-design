@@ -26,9 +26,9 @@ const Contact = () => {
             <a href="mailto:Jordan@JordanVeirs.com">
               <Button 
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
+                className="group/btn bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
               >
-                <Mail className="mr-2 h-5 w-5" />
+                <Mail className="mr-2 h-5 w-5 transition-transform duration-300 group-hover/btn:-translate-x-0.5" />
                 Contact Me
               </Button>
             </a>
