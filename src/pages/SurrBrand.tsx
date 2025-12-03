@@ -54,7 +54,7 @@ const SurrBrand = () => {
 
           {/* Circular Logo Display */}
           <div className="mb-16 flex justify-center">
-            <div className="bg-background rounded-full w-80 h-80 flex items-center justify-center border-2 border-muted">
+            <div className="rounded-full w-80 h-80 flex items-center justify-center border-2 border-muted">
               <img src={surriLogo} alt="SURRI 1207 Circular Logo" className="w-64 h-64 object-contain" />
             </div>
           </div>
@@ -65,8 +65,8 @@ const SurrBrand = () => {
           </p>
 
           {/* Mockup Section */}
-          <div className="bg-[#5A8C7E] p-16 mb-16 flex items-center justify-center min-h-96">
-            <div className="bg-background p-8 max-w-md">
+          <div className="p-16 mb-16 flex items-center justify-center min-h-96">
+            <div className="p-8 max-w-md">
               <img src={surriLogo} alt="Product Mockup" className="w-full h-auto" />
             </div>
           </div>
