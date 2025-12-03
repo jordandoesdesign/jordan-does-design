@@ -9,16 +9,18 @@ import pinterestPin2 from "@/assets/pinterest-pin-2.png";
 import pinterestPin3 from "@/assets/pinterest-pin-3.png";
 import canvaIcons from "@/assets/canva-icons.png";
 import templateWithIcons from "@/assets/template-with-icons.png";
-
 const PinterestGraphics = () => {
-  const seeAlsoProjects = [
-    { title: "Canva Template Design", link: "/work/canva-templates" },
-    { title: "Social Media Event Templates • Rose City Rollers", link: "/work/rose-city-rollers" },
-    { title: "Brand Design: SURRI", link: "/work/surr-brand" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const seeAlsoProjects = [{
+    title: "Canva Template Design",
+    link: "/work/canva-templates"
+  }, {
+    title: "Social Media Event Templates • Rose City Rollers",
+    link: "/work/rose-city-rollers"
+  }, {
+    title: "Brand Design: SURRI",
+    link: "/work/surr-brand"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
@@ -59,7 +61,7 @@ const PinterestGraphics = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex justify-center">
                 <div className="bg-primary rounded-full w-48 h-48 flex items-center justify-center">
-                  <span className="text-primary-foreground text-xl font-bold text-center">Canva<br/>Templates</span>
+                  <span className="text-primary-foreground text-xl font-bold text-center">Canva<br />Templates</span>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -102,10 +104,10 @@ const PinterestGraphics = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={canvaIcons} alt="Icon Set" className="w-full h-full object-cover" />
+                <img src={canvaIcons} alt="Icon Set" className="w-full h-full object-contain" />
               </div>
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-cover" />
+                <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
@@ -114,16 +116,14 @@ const PinterestGraphics = () => {
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -146,8 +146,6 @@ const PinterestGraphics = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default PinterestGraphics;
