@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import greenroomLogo from "@/assets/greenroom-logo.png";
 import logoGrid from "@/assets/logo-grid.png";
+import greenroomExtra1 from "@/assets/greenroom-extra-1.png";
+import peraltaExtra1 from "@/assets/peralta-extra-1.png";
+import peraltaExtra2 from "@/assets/peralta-extra-2.png";
+import peraltaExtra3 from "@/assets/peralta-extra-3.png";
 import logoGreenroom from "@/assets/assets_Logo-Greenroom.png";
 import logoSoluna from "@/assets/assets_Logo-Soluna.png";
 import logoPeralta from "@/assets/assets_Logo-Peralta.png";
@@ -97,7 +101,7 @@ const LogoDesigns = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {initialLogos.map((logo, index) => (
               <div key={index} className="space-y-4 flex flex-col items-start">
-                <div className="w-full max-w-xs md:max-w-sm lg:max-w-[18rem] overflow-hidden">
+                <div className="w-full max-w-xs md:max-w-sm lg:max-w-[14rem] overflow-hidden">
                   <AspectRatio ratio={1}>
                     <img
                       src={logo.image}
@@ -138,7 +142,7 @@ const LogoDesigns = () => {
             <div className="space-y-8">
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
                 <img
-                  src={logoGrid}
+                  src={greenroomExtra1}
                   alt="Greenroom brand collateral"
                   className="w-full h-full object-contain"
                 />
@@ -175,15 +179,15 @@ const LogoDesigns = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
                 <img
-                  src={logoPeralta}
-                  alt="Peralta primary logo"
+                  src={peraltaExtra1}
+                  alt="Peralta brand exploration"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="grid grid-rows-2 gap-4 h-80">
                 <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
                   <img
-                    src={logoGrid}
+                    src={peraltaExtra2}
                     alt="Peralta brand system exploration"
                     className="w-full h-full object-contain"
                   />
@@ -200,7 +204,7 @@ const LogoDesigns = () => {
 
             <div className="h-96 flex items-center justify-center overflow-hidden border-2 border-muted">
               <img
-                src={logoGrid}
+                src={peraltaExtra3}
                 alt="Peralta brand applications"
                 className="w-full h-full object-contain"
               />
