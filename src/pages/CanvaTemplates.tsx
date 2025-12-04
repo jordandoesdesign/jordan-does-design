@@ -8,6 +8,7 @@ import mealPlanTemplate from "@/assets/meal-plan-template.png";
 import pinterestPin1 from "@/assets/pinterest-pin-1.png";
 import pinterestPin2 from "@/assets/pinterest-pin-2.png";
 import pinterestPin3 from "@/assets/pinterest-pin-3.png";
+import pinterestExtra1 from "@/assets/pinterest-extra-1.png";
 const CanvaTemplates = () => {
   const seeAlsoProjects = [{
     title: "Logo Design & Brand Design",
@@ -59,9 +60,26 @@ const CanvaTemplates = () => {
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
               <p className="text-muted-foreground">
-                Hi I'm a bit of designer in house Logos, Social Campaign, & 
+                Hi I'm a bit of designer in house Logos, Social Campaign, &
                 graphic templates that connect with audiences.
               </p>
+            </div>
+          </div>
+
+          {/* Pinterest Gallery Layout */}
+          <div className="mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="space-y-6">
+                <div className="h-40 md:h-48 flex items-center justify-center overflow-hidden">
+                  <img src={pinterestPin1} alt="Pinterest template detail" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
+                  <img src={pinterestPin3} alt="Pinterest template layout" className="w-full h-full object-contain" />
+                </div>
+              </div>
+              <div className="md:col-span-2 h-80 md:h-[22rem] flex items-center justify-center overflow-hidden">
+                <img src={pinterestPin2} alt="Pinterest template collage" className="w-full h-full object-contain" />
+              </div>
             </div>
           </div>
 
@@ -74,8 +92,13 @@ const CanvaTemplates = () => {
               <div className="h-64 flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
               </div>
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
+              <div className="space-y-4">
+                <div className="h-64 flex items-center justify-center overflow-hidden">
+                  <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-64 flex items-center justify-center overflow-hidden">
+                  <img src={pinterestExtra1} alt="Additional Pinterest template in Canva" className="w-full h-full object-contain" />
+                </div>
               </div>
               <div className="h-64 flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-contain" />

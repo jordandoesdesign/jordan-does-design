@@ -98,24 +98,26 @@ const LogoDesigns = () => {
           </p>
 
           {/* Initial Logo Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-            {initialLogos.map((logo, index) => (
-              <div key={index} className="space-y-4 flex flex-col items-start">
-                <div className="w-full max-w-xs md:max-w-sm lg:max-w-[14rem] overflow-hidden">
-                  <AspectRatio ratio={1}>
-                    <img
-                      src={logo.image}
-                      alt={`${logo.name} logo`}
-                      className="w-full h-full object-contain"
-                    />
-                  </AspectRatio>
+          <div className="mb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-4xl mx-auto justify-items-center">
+              {initialLogos.map((logo, index) => (
+                <div key={index} className="space-y-4 flex flex-col items-center">
+                  <div className="w-full max-w-xs md:max-w-sm lg:max-w-[10.5rem] overflow-hidden">
+                    <AspectRatio ratio={1}>
+                      <img
+                        src={logo.image}
+                        alt={`${logo.name} logo`}
+                        className="w-full h-full object-contain"
+                      />
+                    </AspectRatio>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-primary">{logo.name}</p>
+                    <p className="text-sm text-muted-foreground">{logo.client}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-primary">{logo.name}</p>
-                  <p className="text-sm text-muted-foreground">{logo.client}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Greenroom Case Study */}

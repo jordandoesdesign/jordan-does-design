@@ -7,6 +7,10 @@ import roseCityRollers from "@/assets/rose-city-rollers.png";
 import rollersEventPoster from "@/assets/rollers-event-poster.png";
 import rollersBracket from "@/assets/rollers-bracket.png";
 import rollersBootcamp from "@/assets/rollers-bootcamp.png";
+import rollersExtra1 from "@/assets/rollers-extra-1.png";
+import rollersExtra2 from "@/assets/rollers-extra-2.png";
+import rollersExtra3 from "@/assets/rollers-extra-3.png";
+import rollersExtra4 from "@/assets/rollers-extra-4.png";
 const RoseCityRollers = () => {
   const seeAlsoProjects = [{
     title: "Canva Pinterest Graphics",
@@ -65,10 +69,12 @@ const RoseCityRollers = () => {
                 <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-primary rounded-full w-32 h-32 flex items-center justify-center mx-auto">
-                  <span className="text-primary-foreground text-sm font-bold">Badge</span>
+                <div className="h-32 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra1} alt="Roller derby badge graphic" className="w-full h-full object-contain" />
                 </div>
-                <div className="bg-[#C8B5E8] h-48"></div>
+                <div className="h-48 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra2} alt="Roller derby social post" className="w-full h-full object-contain" />
+                </div>
               </div>
             </div>
 
@@ -96,10 +102,18 @@ const RoseCityRollers = () => {
                 <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-muted h-36"></div>
-                <div className="bg-muted h-36"></div>
-                <div className="bg-muted h-36"></div>
-                <div className="bg-[#F5F0B8] h-36"></div>
+                <div className="h-36 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra2} alt="Bootcamp promo graphic" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-36 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra3} alt="Bootcamp social tile" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-36 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra4} alt="Bootcamp merch mockup" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-36 flex items-center justify-center overflow-hidden">
+                  <img src={rollersExtra1} alt="Bootcamp detail badge" className="w-full h-full object-contain" />
+                </div>
               </div>
             </div>
           </div>
@@ -123,8 +137,12 @@ const RoseCityRollers = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-muted h-64"></div>
-              <div className="bg-muted h-64"></div>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={rollersExtra3} alt="Tournament social graphic" className="w-full h-full object-contain" />
+              </div>
+              <div className="h-64 flex items-center justify-center overflow-hidden">
+                <img src={rollersExtra4} alt="Tournament merch mockup" className="w-full h-full object-contain" />
+              </div>
             </div>
           </div>
 

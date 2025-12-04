@@ -48,12 +48,18 @@ const IconsIllustrations = () => {
           {/* Lasagna Illustration Section */}
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img src={lasagnaIllustration} alt="Lasagna Illustration" className="shadow-lg w-full h-auto" />
+              <div className="max-w-md mx-auto">
+                <img
+                  src={lasagnaIllustration}
+                  alt="Lasagna Illustration"
+                  className="shadow-lg w-full h-auto"
+                />
+              </div>
               <div className="space-y-6">
-                <div className="h-40 flex items-center justify-center overflow-hidden">
+                <div className="h-52 md:h-56 flex items-center justify-center overflow-hidden">
                   <img src={iceCreamIllustration} alt="Ice Cream Illustration" className="w-full h-full object-contain" />
                 </div>
-                <div className="h-40 flex items-center justify-center overflow-hidden">
+                <div className="h-52 md:h-56 flex items-center justify-center overflow-hidden">
                   <img src={characterSketches} alt="Character Sketches" className="w-full h-full object-contain" />
                 </div>
               </div>
