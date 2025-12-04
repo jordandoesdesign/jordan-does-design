@@ -14,7 +14,7 @@ const About = () => {
       {/* About Hero Section */}
       <section className="pt-32 pb-12 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,260px)_minmax(0,1fr)] gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[minmax(0,260px)_minmax(0,1fr)] gap-12 items-start">
             {/* Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-56 h-56 flex items-center justify-center overflow-hidden">
@@ -43,7 +43,7 @@ const About = () => {
       {/* Services Sections */}
       <section className="pb-16 px-6">
         <div className="container mx-auto max-w-4xl space-y-16">
-          <div>
+          <div className="pt-10">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Logo &amp; Brand Design
             </h2>
@@ -74,7 +74,7 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="pt-10">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Social Media Templates
             </h2>
@@ -105,7 +105,7 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="pt-10">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Illustration
             </h2>

@@ -97,7 +97,7 @@ const LogoDesigns = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {initialLogos.map((logo, index) => (
               <div key={index} className="space-y-4 flex flex-col items-start">
-                <div className="w-full max-w-xs md:max-w-sm overflow-hidden">
+                <div className="w-full max-w-xs md:max-w-sm lg:max-w-[18rem] overflow-hidden">
                   <AspectRatio ratio={1}>
                     <img
                       src={logo.image}
@@ -136,8 +136,12 @@ const LogoDesigns = () => {
 
             {/* Greenroom Images */}
             <div className="space-y-8">
-              <div className="h-80 flex items-center justify-center border-2 border-muted">
-                <span className="text-muted-foreground text-sm">Image placeholder</span>
+              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+                <img
+                  src={logoGrid}
+                  alt="Greenroom brand collateral"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
                 <img
@@ -169,12 +173,20 @@ const LogoDesigns = () => {
 
             {/* Peralta Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="h-80 flex items-center justify-center border-2 border-muted">
-                <span className="text-muted-foreground text-sm">Image placeholder</span>
+              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+                <img
+                  src={logoPeralta}
+                  alt="Peralta primary logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="grid grid-rows-2 gap-4 h-80">
-                <div className="flex items-center justify-center border-2 border-muted">
-                  <span className="text-muted-foreground text-sm">Image placeholder</span>
+                <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
+                  <img
+                    src={logoGrid}
+                    alt="Peralta brand system exploration"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
                   <img
@@ -186,8 +198,12 @@ const LogoDesigns = () => {
               </div>
             </div>
 
-            <div className="h-96 flex items-center justify-center border-2 border-muted">
-              <span className="text-muted-foreground text-sm">Image placeholder</span>
+            <div className="h-96 flex items-center justify-center overflow-hidden border-2 border-muted">
+              <img
+                src={logoGrid}
+                alt="Peralta brand applications"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
 

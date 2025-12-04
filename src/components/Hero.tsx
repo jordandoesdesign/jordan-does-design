@@ -30,7 +30,7 @@ const Hero = () => {
               <img
                 src={heroArrow}
                 alt="Curved decorative arrow"
-                className="w-[18px] h-[107px]"
+                className="w-[13px] h-[75px]"
               />
             </div>
           </div>
