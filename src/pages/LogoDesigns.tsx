@@ -21,58 +21,47 @@ import logoMutch from "@/assets/assets_Logo-LM.png";
 import logoSushiBar from "@/assets/assets_Logo-Edo.png";
 import logoFastLab from "@/assets/assets_Logo-FastLab.png";
 const LogoDesigns = () => {
-  const initialLogos = [
-    {
-      name: "Greenroom",
-      client: "Flower Delivery Service",
-      image: logoGreenroom,
-    },
-    {
-      name: "Soluna",
-      client: "Luxury Fashion",
-      image: logoSoluna,
-    },
-    {
-      name: "Peralta",
-      client: "Luxury Fashion",
-      image: logoPeralta,
-    },
-    {
-      name: "Frugal Feasts",
-      client: "Food & Lifestyle",
-      image: logoFrugalFeasts,
-    },
-    {
-      name: "Hometown Throwdown",
-      client: "Roller Derby Tournament",
-      image: logoBetterTogether,
-    },
-    {
-      name: "Boulevard Boutique",
-      client: "Luxury Fashion",
-      image: logoBoulevard,
-    },
-    {
-      name: "Little Red Writing",
-      client: "Content Writing",
-      image: logoRedWolfInn,
-    },
-    {
-      name: "Mutch",
-      client: "Fitness & Personal Training",
-      image: logoMutch,
-    },
-    {
-      name: "Edo",
-      client: "Sushi Bar",
-      image: logoSushiBar,
-    },
-    {
-      name: "Fast Lab",
-      client: "Fitness & Mobility Training",
-      image: logoFastLab,
-    },
-  ];
+  const initialLogos = [{
+    name: "Greenroom",
+    client: "Flower Delivery Service",
+    image: logoGreenroom
+  }, {
+    name: "Soluna",
+    client: "Luxury Fashion",
+    image: logoSoluna
+  }, {
+    name: "Peralta",
+    client: "Luxury Fashion",
+    image: logoPeralta
+  }, {
+    name: "Frugal Feasts",
+    client: "Food & Lifestyle",
+    image: logoFrugalFeasts
+  }, {
+    name: "Hometown Throwdown",
+    client: "Roller Derby Tournament",
+    image: logoBetterTogether
+  }, {
+    name: "Boulevard Boutique",
+    client: "Luxury Fashion",
+    image: logoBoulevard
+  }, {
+    name: "Little Red Writing",
+    client: "Content Writing",
+    image: logoRedWolfInn
+  }, {
+    name: "Mutch",
+    client: "Fitness & Personal Training",
+    image: logoMutch
+  }, {
+    name: "Edo",
+    client: "Sushi Bar",
+    image: logoSushiBar
+  }, {
+    name: "Fast Lab",
+    client: "Fitness & Mobility Training",
+    image: logoFastLab
+  }];
   const seeAlsoProjects = [{
     title: "Canva Template Design",
     link: "/work/canva-templates"
@@ -100,23 +89,17 @@ const LogoDesigns = () => {
           {/* Initial Logo Grid */}
           <div className="mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-4xl mx-auto justify-items-center">
-              {initialLogos.map((logo, index) => (
-                <div key={index} className="space-y-4 flex flex-col items-center">
+              {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex flex-col items-center">
                   <div className="w-full max-w-xs md:max-w-sm lg:max-w-[10.5rem] overflow-hidden">
                     <AspectRatio ratio={1}>
-                      <img
-                        src={logo.image}
-                        alt={`${logo.name} logo`}
-                        className="w-full h-full object-contain"
-                      />
+                      <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
                     </AspectRatio>
                   </div>
                   <div className="text-center">
                     <p className="text-sm font-semibold text-primary">{logo.name}</p>
                     <p className="text-sm text-muted-foreground">{logo.client}</p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -143,18 +126,10 @@ const LogoDesigns = () => {
             {/* Greenroom Images */}
             <div className="space-y-8">
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
-                <img
-                  src={greenroomExtra1}
-                  alt="Greenroom brand collateral"
-                  className="w-full h-full object-contain"
-                />
+                <img src={greenroomExtra1} alt="Greenroom brand collateral" className="w-full h-full object-contain" />
               </div>
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
-                <img
-                  src={greenroomLogo}
-                  alt="Greenroom brand artwork"
-                  className="w-full h-full object-contain"
-                />
+                <img src={greenroomLogo} alt="Greenroom brand artwork" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
@@ -180,36 +155,20 @@ const LogoDesigns = () => {
             {/* Peralta Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
-                <img
-                  src={peraltaExtra1}
-                  alt="Peralta brand exploration"
-                  className="w-full h-full object-contain"
-                />
+                <img src={peraltaExtra1} alt="Peralta brand exploration" className="w-full h-full object-contain border-0" />
               </div>
               <div className="grid grid-rows-2 gap-4 h-80">
                 <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
-                  <img
-                    src={peraltaExtra2}
-                    alt="Peralta brand system exploration"
-                    className="w-full h-full object-contain"
-                  />
+                  <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
                 </div>
                 <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
-                  <img
-                    alt="Peralta brand mockup"
-                    className="w-full h-full object-contain"
-                    src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png"
-                  />
+                  <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="w-full h-full object-contain border-0" />
                 </div>
               </div>
             </div>
 
             <div className="h-96 flex items-center justify-center overflow-hidden border-2 border-muted">
-              <img
-                src={peraltaExtra3}
-                alt="Peralta brand applications"
-                className="w-full h-full object-contain"
-              />
+              <img src={peraltaExtra3} alt="Peralta brand applications" className="w-full h-full object-contain border-0" />
             </div>
           </div>
 
