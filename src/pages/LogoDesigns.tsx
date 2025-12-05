@@ -88,8 +88,8 @@ const LogoDesigns = () => {
 
           {/* Initial Logo Grid */}
           <div className="mb-24">
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-y-6 gap-x-6 max-w-4xl mx-auto justify-items-center">
-              {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex items-center ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-4xl mx-auto justify-items-center">
+              {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex flex-col items-center">
                   <div className="w-full max-w-[220px] md:max-w-[280px] lg:max-w-[350px] overflow-hidden">
                     <AspectRatio ratio={1}>
                       <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
@@ -153,16 +153,16 @@ const LogoDesigns = () => {
             </p>
 
             {/* Peralta Images */}
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-0 mb-8 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="h-80 flex items-center justify-center overflow-hidden">
-                <img src={peraltaExtra1} alt="Peralta brand exploration" className=" border-0 object-scale-down" />
+                <img src={peraltaExtra1} alt="Peralta brand exploration" className="w-full h-full object-contain border-0" />
               </div>
-              <div className="grid grid-rows-2 gap-9 shadow-amber-700 ">
+              <div className="grid grid-rows-2 gap-4 h-80">
                 <div className="flex items-center justify-center overflow-hidden">
-                  <img src={peraltaExtra2} alt="Peralta brand system exploration" className="object-contain border-0" />
+                  <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
                 </div>
                 <div className="flex items-center justify-center overflow-hidden">
-                  <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="object-contain border-0" />
+                  <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="w-full h-full object-contain border-0" />
                 </div>
               </div>
             </div>
