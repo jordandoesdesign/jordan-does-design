@@ -90,7 +90,7 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-4xl mx-auto justify-items-center">
               {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex flex-col items-center">
-                  <div className="w-full max-w-xs md:max-w-sm lg:max-w-[10.5rem] overflow-hidden">
+                  <div className="w-full max-w-[220px] md:max-w-[280px] lg:max-w-[350px] overflow-hidden">
                     <AspectRatio ratio={1}>
                       <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
                     </AspectRatio>
@@ -125,10 +125,10 @@ const LogoDesigns = () => {
 
             {/* Greenroom Images */}
             <div className="space-y-8">
-              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+              <div className="h-80 flex items-center justify-center overflow-hidden">
                 <img src={greenroomExtra1} alt="Greenroom brand collateral" className="w-full h-full object-contain" />
               </div>
-              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+              <div className="h-80 flex items-center justify-center overflow-hidden">
                 <img src={greenroomLogo} alt="Greenroom brand artwork" className="w-full h-full object-contain" />
               </div>
             </div>
@@ -154,20 +154,20 @@ const LogoDesigns = () => {
 
             {/* Peralta Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="h-80 flex items-center justify-center overflow-hidden border-2 border-muted">
+              <div className="h-80 flex items-center justify-center overflow-hidden">
                 <img src={peraltaExtra1} alt="Peralta brand exploration" className="w-full h-full object-contain border-0" />
               </div>
               <div className="grid grid-rows-2 gap-4 h-80">
-                <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
+                <div className="flex items-center justify-center overflow-hidden">
                   <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
                 </div>
-                <div className="flex items-center justify-center overflow-hidden border-2 border-muted">
+                <div className="flex items-center justify-center overflow-hidden">
                   <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="w-full h-full object-contain border-0" />
                 </div>
               </div>
             </div>
 
-            <div className="h-96 flex items-center justify-center overflow-hidden border-2 border-muted">
+            <div className="h-96 flex items-center justify-center overflow-hidden">
               <img src={peraltaExtra3} alt="Peralta brand applications" className="w-full h-full object-contain border-0" />
             </div>
           </div>
