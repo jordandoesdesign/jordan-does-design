@@ -43,11 +43,12 @@ const PinterestGraphics = () => {
 
           {/* First Pinterest Graphics Showcase */}
           <div className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <img src={pinterestGraphics} alt="Pinterest Graphics" className="shadow-lg w-full h-auto" />
-              <div className="h-96 flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin1} alt="Pinterest Pin" className="w-full h-full object-cover" />
-              </div>
+            <div className="h-[22rem] md:h-[28rem] flex items-center justify-center overflow-hidden">
+              <img
+                src={pinterestGraphics}
+                alt="Pinterest Graphics"
+                className="shadow-lg w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -65,10 +66,10 @@ const PinterestGraphics = () => {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="h-48 overflow-hidden">
+                <div className="h-64 md:h-80 overflow-hidden">
                   <img src={pinterestPin2} alt="Pinterest Template" className="w-full h-full object-cover" />
                 </div>
-                <div className="h-48 overflow-hidden">
+                <div className="h-56 md:h-72 overflow-hidden">
                   <img src={pinterestPin3} alt="Pinterest Template" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -82,13 +83,13 @@ const PinterestGraphics = () => {
 
           {/* Three Pinterest Pins Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="h-96 flex items-center justify-center overflow-hidden">
+            <div className="h-80 md:h-96 flex items-center justify-center overflow-hidden">
               <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-cover" />
             </div>
-            <div className="h-96 flex items-center justify-center overflow-hidden">
+            <div className="h-[22rem] md:h-[30rem] flex items-center justify-center overflow-hidden">
               <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-cover" />
             </div>
-            <div className="h-96 flex items-center justify-center overflow-hidden">
+            <div className="h-80 md:h-96 flex items-center justify-center overflow-hidden">
               <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-cover" />
             </div>
           </div>
@@ -102,12 +103,36 @@ const PinterestGraphics = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
               est, eget convallis tortor.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={canvaIcons} alt="Icon Set" className="w-full h-full object-contain" />
+            <div className="space-y-8">
+              <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
+                <img
+                  src={canvaIcons}
+                  alt="Icon Set"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-contain" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={templateWithIcons}
+                    alt="Template with Icons"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={canvaIcons}
+                    alt="Icon Set detail"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
+                <img
+                  src={templateWithIcons}
+                  alt="Template with Icons detail"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>

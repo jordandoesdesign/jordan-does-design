@@ -76,7 +76,7 @@ const IconsIllustrations = () => {
             <div className="h-80 flex items-center justify-center overflow-hidden">
               
             </div>
-            <div className="h-80 flex items-center justify-center overflow-hidden">
+            <div className="h-80 md:h-[32rem] flex items-center justify-center overflow-hidden">
               <img src={pattern2} alt="Pattern 2" className="w-full h-full object-contain" />
             </div>
             <div className="h-80 flex items-center justify-center overflow-hidden">
