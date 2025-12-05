@@ -136,12 +136,12 @@ const RoseCityRollers = () => {
               <img alt="Tournament Hero Image" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="h-64 flex items-center justify-center overflow-hidden">
                 <img src={rollersExtra3} alt="Tournament social graphic" className="w-full h-full object-contain" />
               </div>
               <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={rollersExtra4} alt="Tournament merch mockup" className="w-full h-full object-contain" />
+                
               </div>
             </div>
           </div>
