@@ -48,7 +48,7 @@ const RoseCityRollers = () => {
           {/* Event Logo Section */}
           <div className="mb-24">
             <div className="mb-12">
-              <img alt="Rose City Rollers Event Graphics" src="/lovable-uploads/6ff60d12-176d-4218-9c41-bcf983339997.png" className="w-full mb-8 object-scale-down shadow-none" />
+              <img alt="Rose City Rollers Event Graphics" src="/lovable-uploads/6ff60d12-176d-4218-9c41-bcf983339997.png" className="w-full  object-scale-down shadow-none" />
             </div>
 
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-8">
@@ -64,11 +64,11 @@ const RoseCityRollers = () => {
             </p>
 
             {/* Campaign Assets Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-2 ">
               <div className="h-64 flex items-center justify-center overflow-hidden">
                 <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-contain" />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-0">
                 <div className="h-32 flex items-center justify-center overflow-hidden">
                   
                 </div>
