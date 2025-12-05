@@ -70,7 +70,7 @@ const RoseCityRollers = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="h-32 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra1} alt="Roller derby badge graphic" className="w-full h-full object-contain" />
+                  
                 </div>
                 <div className="h-48 flex items-center justify-center overflow-hidden">
                   <img src={rollersExtra2} alt="Roller derby social post" className="w-full h-full object-contain" />
@@ -103,13 +103,13 @@ const RoseCityRollers = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="h-36 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra2} alt="Bootcamp promo graphic" className="w-full h-full object-contain" />
+                  
                 </div>
                 <div className="h-36 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra3} alt="Bootcamp social tile" className="w-full h-full object-contain" />
+                  
                 </div>
                 <div className="h-36 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra4} alt="Bootcamp merch mockup" className="w-full h-full object-contain" />
+                  
                 </div>
                 <div className="h-36 flex items-center justify-center overflow-hidden">
                   <img src={rollersExtra1} alt="Bootcamp detail badge" className="w-full h-full object-contain" />
