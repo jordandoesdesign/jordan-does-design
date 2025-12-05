@@ -153,16 +153,16 @@ const LogoDesigns = () => {
             </p>
 
             {/* Peralta Images */}
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-0 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-0 mb-8 ">
               <div className="h-80 flex items-center justify-center overflow-hidden">
-                <img src={peraltaExtra1} alt="Peralta brand exploration" className="w-full h-full border-0 object-scale-down" />
+                <img src={peraltaExtra1} alt="Peralta brand exploration" className=" border-0 object-scale-down" />
               </div>
               <div className="grid grid-rows-2 gap-9 shadow-amber-700 ">
                 <div className="flex items-center justify-center overflow-hidden">
-                  <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
+                  <img src={peraltaExtra2} alt="Peralta brand system exploration" className="object-contain border-0" />
                 </div>
                 <div className="flex items-center justify-center overflow-hidden">
-                  <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="w-full h-full object-contain border-0" />
+                  <img alt="Peralta brand mockup" src="/lovable-uploads/76b0f545-1f1a-45ed-a393-80f2542b1289.png" className="object-contain border-0" />
                 </div>
               </div>
             </div>
