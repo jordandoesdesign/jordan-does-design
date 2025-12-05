@@ -97,11 +97,11 @@ const RoseCityRollers = () => {
               est, eget convallis tortor.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-8 mb-16">
               <div className="h-80 flex items-center justify-center overflow-hidden">
                 <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-contain" />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 w-full m-full">
                 <div className="h-36 flex items-center justify-center overflow-hidden">
                   
                 </div>
