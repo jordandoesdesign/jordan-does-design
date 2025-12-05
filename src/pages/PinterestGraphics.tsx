@@ -3,12 +3,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import pinterestGraphics from "@/assets/pinterest-graphics.png";
+import pinterestCollection from "@/assets/pinterest-collection.png";
 import pinterestPin1 from "@/assets/pinterest-pin-1.png";
 import pinterestPin2 from "@/assets/pinterest-pin-2.png";
 import pinterestPin3 from "@/assets/pinterest-pin-3.png";
 import canvaIcons from "@/assets/canva-icons.png";
 import templateWithIcons from "@/assets/template-with-icons.png";
+import canvaPlaceholder from "@/assets/canva-placeholder.png";
 const PinterestGraphics = () => {
   const seeAlsoProjects = [{
     title: "Canva Template Design",
@@ -45,7 +46,7 @@ const PinterestGraphics = () => {
           <div className="mb-16">
             <div className="h-[22rem] md:h-[28rem] flex items-center justify-center overflow-hidden">
               <img
-                src={pinterestGraphics}
+                src={pinterestCollection}
                 alt="Pinterest Graphics"
                 className="shadow-lg w-full h-full object-cover"
               />
@@ -61,8 +62,8 @@ const PinterestGraphics = () => {
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex justify-center">
-                <div className="bg-primary rounded-full w-48 h-48 flex items-center justify-center">
-                  <span className="text-primary-foreground text-xl font-bold text-center">Canva<br />Templates</span>
+                <div className="h-64 md:h-80 overflow-hidden">
+                  <img src={canvaPlaceholder} alt="Canva Templates showcase" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">

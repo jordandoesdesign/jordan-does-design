@@ -88,12 +88,10 @@ const LogoDesigns = () => {
 
           {/* Initial Logo Grid */}
           <div className="mb-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-4xl mx-auto justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-5xl mx-auto justify-items-center">
               {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex flex-col items-center">
-                  <div className="w-full max-w-[220px] md:max-w-[280px] lg:max-w-[350px] overflow-hidden">
-                    <AspectRatio ratio={1}>
-                      <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
-                    </AspectRatio>
+                  <div className="w-[280px] md:w-[320px] lg:w-[400px] h-[280px] md:h-[320px] lg:h-[400px] overflow-hidden">
+                    <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
                   </div>
                   <div className="text-center">
                     <p className="text-sm font-semibold text-primary">{logo.name}</p>
@@ -125,10 +123,10 @@ const LogoDesigns = () => {
 
             {/* Greenroom Images */}
             <div className="space-y-8">
-              <div className="h-80 flex items-center justify-center overflow-hidden">
+              <div className="h-96 md:h-[28rem] flex items-center justify-center overflow-hidden">
                 <img src={greenroomExtra1} alt="Greenroom brand collateral" className="w-full h-full object-contain" />
               </div>
-              <div className="h-80 flex items-center justify-center overflow-hidden">
+              <div className="h-96 md:h-[28rem] flex items-center justify-center overflow-hidden">
                 <img src={greenroomLogo} alt="Greenroom brand artwork" className="w-full h-full object-contain" />
               </div>
             </div>
@@ -153,11 +151,11 @@ const LogoDesigns = () => {
             </p>
 
             {/* Peralta Images */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="h-80 flex items-center justify-center overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="h-56 md:h-64 flex items-center justify-center overflow-hidden">
                 <img src={peraltaExtra1} alt="Peralta brand exploration" className="w-full h-full object-contain border-0" />
               </div>
-              <div className="grid grid-rows-2 gap-4 h-80">
+              <div className="grid grid-rows-2 gap-3 h-56 md:h-64">
                 <div className="flex items-center justify-center overflow-hidden">
                   <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
                 </div>
@@ -167,7 +165,7 @@ const LogoDesigns = () => {
               </div>
             </div>
 
-            <div className="h-96 flex items-center justify-center overflow-hidden">
+            <div className="h-72 md:h-80 flex items-center justify-center overflow-hidden">
               <img src={peraltaExtra3} alt="Peralta brand applications" className="w-full h-full object-contain border-0" />
             </div>
           </div>
