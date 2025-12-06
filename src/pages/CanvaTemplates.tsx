@@ -24,7 +24,7 @@ const CanvaTemplates = () => {
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
-        <div className="container mx-auto max-w-auto">
+        <div className="container mx-auto max-w-6xl">
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-4">
             Canva
           </h1>
@@ -70,7 +70,7 @@ const CanvaTemplates = () => {
           <div className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
               <div className="space-y-6">
-                <div className="h-48 md:h-[18rem] flex items-center justify-right overflow-hidden">
+                <div className="h-48 md:h-[18rem] flex items-center justify-center overflow-hidden">
                   <img alt="Pinterest template detail" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
                 </div>
                 <div className="h-64 md:h-[22rem] flex items-center justify-center overflow-hidden">
@@ -84,20 +84,20 @@ const CanvaTemplates = () => {
           </div>
 
           {/* Additional Templates Section */}
-          <div className="mb-0">
+          <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
               Pinterest Templates in Canva
             </h2>
-            <div className="grid-cols-[auto_1fr_auto] auto md:grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                <img alt="Pinterest Pin 1" className="w-full h-full object-contain" src="/lovable-uploads/f7eeb6c5-7f76-4fc1-b712-839915d84f0d.png" />
+                <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
               </div>
-              <div className="">
+              <div className="space-y-4">
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                   <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                  
+                  <img alt="Additional Pinterest template in Canva" className="w-full h-full object-contain" src="/lovable-uploads/7a8bc8a7-66fe-4d3a-aa22-36d41b14ea1f.png" />
                 </div>
               </div>
               <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
