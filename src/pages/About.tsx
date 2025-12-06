@@ -41,7 +41,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Logo &amp; Brand Design
             </h2>
-            <p className="text-muted-foreground mb-8">Whether you have a new brand and are looking to discover your visual identity or you already have a logo you want to elevate, I love designing brands and bringing them to life. My design process starts with an interview so I can learn about your brand and your industry.              </p>
+            <p className="text-muted-foreground mb-8">Whether you have a new brand and are looking to discover your visual identity or you already have a logo you want to elevate, I love designing brands and bringing them to life. My design process starts with an interview so that I can learn about your brand and your industry.              </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/work">
                 <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
