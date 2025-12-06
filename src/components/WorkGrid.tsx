@@ -58,7 +58,7 @@ const ProjectCard = ({
       <Link to={project.link}>
         <div className="overflow-hidden mb-4 transition-transform duration-300 hover:scale-105 cursor-pointer">
           <AspectRatio ratio={40 / 27}>
-            <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-cover" />
+            <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-scale-down" />
           </AspectRatio>
         </div>
       </Link>
