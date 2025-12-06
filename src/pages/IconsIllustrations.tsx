@@ -56,44 +56,46 @@ const IconsIllustrations = () => {
 
           {/* Carousel Section */}
           <div className="mb-24">
-            <Carousel className="w-full" opts={{ loop: true }}>
-              <div className="flex items-center">
-                {/* Left Arrow */}
-                <CarouselPrevious className="relative left-0 translate-y-0 h-12 w-12 border-2 border-foreground bg-transparent hover:bg-foreground hover:text-background rounded-full" />
-                
-                {/* Carousel Content */}
-                <div className="flex-1 mx-4 md:mx-8">
-                  <CarouselContent>
-                    {carouselImages.map((image, index) => (
-                      <CarouselItem key={index}>
-                        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-4">
-                          {/* Image */}
-                          <div className="w-full md:w-1/2 flex items-center justify-center">
-                            <img
-                              src={image.src}
-                              alt={image.alt}
-                              className="max-h-[400px] md:max-h-[500px] w-auto object-contain"
-                            />
+            <div className="bg-white p-8 md:p-12 rounded-none shadow-sm">
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <div className="flex items-center">
+                  {/* Left Arrow */}
+                  <CarouselPrevious className="relative left-0 translate-y-0 h-12 w-12 aspect-square border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110 active:scale-95" />
+                  
+                  {/* Carousel Content */}
+                  <div className="flex-1 mx-4 md:mx-8">
+                    <CarouselContent>
+                      {carouselImages.map((image, index) => (
+                        <CarouselItem key={index}>
+                          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-4">
+                            {/* Image */}
+                            <div className="w-full md:w-1/2 flex items-center justify-center">
+                              <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="max-h-[400px] md:max-h-[500px] w-auto object-contain"
+                              />
+                            </div>
+                            {/* Caption */}
+                            <div className="w-full md:w-1/2 text-center md:text-left">
+                              <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
+                                {image.alt}
+                              </h3>
+                              <p className="text-muted-foreground text-lg leading-relaxed">
+                                {image.caption}
+                              </p>
+                            </div>
                           </div>
-                          {/* Caption */}
-                          <div className="w-full md:w-1/2 text-center md:text-left">
-                            <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-                              {image.alt}
-                            </h3>
-                            <p className="text-muted-foreground text-lg leading-relaxed">
-                              {image.caption}
-                            </p>
-                          </div>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                  </div>
+                  
+                  {/* Right Arrow */}
+                  <CarouselNext className="relative right-0 translate-y-0 h-12 w-12 aspect-square border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110 active:scale-95" />
                 </div>
-                
-                {/* Right Arrow */}
-                <CarouselNext className="relative right-0 translate-y-0 h-12 w-12 border-2 border-foreground bg-transparent hover:bg-foreground hover:text-background rounded-full" />
-              </div>
-            </Carousel>
+              </Carousel>
+            </div>
           </div>
 
           {/* See Also Section */}
