@@ -45,7 +45,7 @@ const PinterestGraphics = () => {
           {/* First Pinterest Graphics Showcase */}
           <div className="mb-16">
             <div className="h-[22rem] md:h-[28rem] flex items-center justify-center overflow-hidden">
-              <img src={pinterestCollection} alt="Pinterest Graphics" className="shadow-lg w-full h-full object-cover" />
+              <img src={pinterestCollection} alt="Pinterest Graphics" className="shadow-lg w-full h-full object-scale-down" />
             </div>
           </div>
 
