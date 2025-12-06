@@ -155,7 +155,7 @@ const LogoDesigns = () => {
               <div className="h-56 md:h-64 flex items-center justify-center overflow-hidden">
                 <img src={peraltaExtra1} alt="Peralta brand exploration" className=" h-full object-contain border-0 capitalize right-auto " />
               </div>
-              <div className="grid grid-rows-2 gap-3 h-56 md:h-64">
+              <div className="grid grid-rows-2 gap-0 h-46 md:h-64">
                 <div className="flex items-center justify-center overflow-hidden">
                   <img src={peraltaExtra2} alt="Peralta brand system exploration" className="w-full h-full object-contain border-0" />
                 </div>
