@@ -7,8 +7,7 @@ import { Link } from "react-router-dom";
 import jordanPortrait from "@/assets/jordan-portrait.png";
 const About = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ✿ & More! ";
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
 
       {/* About Hero Section */}
@@ -18,11 +17,7 @@ const About = () => {
             {/* Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-56 h-56 flex items-center justify-center overflow-hidden">
-                <img
-                  src={jordanPortrait}
-                  alt="Jordan Veirs"
-                  className="w-full h-full object-contain"
-                />
+                <img src={jordanPortrait} alt="Jordan Veirs" className="w-full h-full object-contain" />
               </div>
             </div>
 
@@ -47,26 +42,16 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Logo &amp; Brand Design
             </h2>
-            <p className="text-muted-foreground mb-8">
-              Whether you are a new brand looking to discover your visual identity or you already have
-              a logo you want to elevate, I love designing logos. My design process starts with an
-              interview so I can learn about your brand’s story and gain insights about your industry.
-            </p>
+            <p className="text-muted-foreground mb-8">Whether you have a new brand and are looking to discover your visual identity or you already have a logo you want to elevate, I love designing brands and bringing them to life. My design process starts with an interview so I can learn about your brand’s story, gain insights about your industry, and help you stand out amongst competitors. </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/work">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   See My Work
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
               </Link>
               <a href="mailto:Jordan@JordanVeirs.com?subject=Let%27s%20start%20a%20project.">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   Start a Project
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
@@ -78,26 +63,16 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Social Media Templates
             </h2>
-            <p className="text-muted-foreground mb-8">
-              I enjoy working with small businesses who are tired of overpaying for design services.
-              With a background in digital marketing and over 10 years of design experience, I can
-              provide you with all the design templates you need to create engaging social content.
-            </p>
+            <p className="text-muted-foreground mb-8">I enjoy working with content creators to help them create design tools custom to their brand. With a background in digital marketing and over 10 years of design experience, I can provide you with all the design templates you need to save time and create engaging social content faster.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/work">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   See My Work
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
               </Link>
               <a href="mailto:Jordan@JordanVeirs.com?subject=Let%27s%20start%20a%20project.">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   Start a Project
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
@@ -109,25 +84,16 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Illustration
             </h2>
-            <p className="text-muted-foreground mb-8">
-              I love digital illustration. I have worked with clients to create custom icons,
-              stickers, merchandise apparel, and more.
-            </p>
+            <p className="text-muted-foreground mb-8">I love digital illustration projects. I have worked with clients to create custom icons, sticker designs, apparel merchandise, and more.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/work">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   See My Work
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
               </Link>
               <a href="mailto:Jordan@JordanVeirs.com?subject=Let%27s%20start%20a%20project.">
-                <Button
-                  variant="outline"
-                  className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                >
+                <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   Start a Project
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Button>
@@ -153,7 +119,6 @@ const About = () => {
       <ContactForm />
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
 export default About;
