@@ -3,13 +3,6 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel";
 import illustrationItems from "@/assets/illustration-items.png";
 import lasagnaIllustration from "@/assets/lasagna-illustration.png";
 import iceCreamIllustration from "@/assets/ice-cream-illustration.png";
@@ -17,7 +10,6 @@ import characterSketches from "@/assets/character-sketches.png";
 import pattern1 from "@/assets/pattern-1.png";
 import pattern2 from "@/assets/pattern-2.png";
 import pattern3 from "@/assets/pattern-3.png";
-
 const IconsIllustrations = () => {
   const seeAlsoProjects = [{
     title: "Canva Template Design",
@@ -29,19 +21,7 @@ const IconsIllustrations = () => {
     title: "Brand Design: SURRI",
     link: "/work/surr-brand"
   }];
-
-  const carouselImages = [
-    { src: illustrationItems, alt: "Illustration Items", caption: "Custom illustration items designed for various client projects, featuring food icons and everyday objects." },
-    { src: lasagnaIllustration, alt: "Lasagna Illustration", caption: "A detailed lasagna illustration showcasing layered pasta, cheese, and sauce in a warm, inviting style." },
-    { src: iceCreamIllustration, alt: "Ice Cream Illustration", caption: "Playful ice cream cone illustrations with colorful scoops and toppings." },
-    { src: characterSketches, alt: "Character Sketches", caption: "Character concept sketches exploring different expressions and poses." },
-    { src: pattern1, alt: "Pattern Design 1", caption: "Seamless pattern design featuring organic shapes and vibrant colors." },
-    { src: pattern2, alt: "Pattern Design 2", caption: "Geometric pattern with bold lines and complementary color palette." },
-    { src: pattern3, alt: "Pattern Design 3", caption: "Nature-inspired pattern with floral and botanical elements." },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <section className="pt-32 pb-16 px-6">
@@ -51,65 +31,83 @@ const IconsIllustrations = () => {
           </h1>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            A collection of custom illustrations, icons, and pattern designs created for various clients and personal projects.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed 
+            posuere lectus. Morbi ut commodo enim, nec consequat velit. Proin a.
           </p>
 
-          {/* Carousel Section */}
-          <div className="mb-24">
-            <Carousel className="w-full" opts={{ loop: true }}>
-              <div className="flex items-center">
-                {/* Left Arrow */}
-                <CarouselPrevious className="relative left-0 translate-y-0 h-12 w-12 border-2 border-foreground bg-transparent hover:bg-foreground hover:text-background rounded-full" />
-                
-                {/* Carousel Content */}
-                <div className="flex-1 mx-4 md:mx-8">
-                  <CarouselContent>
-                    {carouselImages.map((image, index) => (
-                      <CarouselItem key={index}>
-                        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-4">
-                          {/* Image */}
-                          <div className="w-full md:w-1/2 flex items-center justify-center">
-                            <img
-                              src={image.src}
-                              alt={image.alt}
-                              className="max-h-[400px] md:max-h-[500px] w-auto object-contain"
-                            />
-                          </div>
-                          {/* Caption */}
-                          <div className="w-full md:w-1/2 text-center md:text-left">
-                            <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-                              {image.alt}
-                            </h3>
-                            <p className="text-muted-foreground text-lg leading-relaxed">
-                              {image.caption}
-                            </p>
-                          </div>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                </div>
-                
-                {/* Right Arrow */}
-                <CarouselNext className="relative right-0 translate-y-0 h-12 w-12 border-2 border-foreground bg-transparent hover:bg-foreground hover:text-background rounded-full" />
-              </div>
-            </Carousel>
+          {/* First Illustration Grid */}
+          <div className="mb-16">
+            <img src={illustrationItems} alt="Illustration Items" className="w-full max-w-2xl mx-auto shadow-lg mb-8" />
           </div>
+
+          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
+            est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
+          </p>
+
+          {/* Lasagna Illustration Section */}
+          <div className="mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="max-w-md mx-auto">
+                <img
+                  src={lasagnaIllustration}
+                  alt="Lasagna Illustration"
+                  className="shadow-lg w-full h-auto"
+                />
+              </div>
+              <div className="space-y-6">
+                <div className="h-52 md:h-56 flex items-center justify-center overflow-hidden">
+                  <img src={iceCreamIllustration} alt="Ice Cream Illustration" className="w-full h-full object-contain" />
+                </div>
+                <div className="h-52 md:h-56 flex items-center justify-center overflow-hidden">
+                  <img src={characterSketches} alt="Character Sketches" className="w-full h-full object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
+            est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
+          </p>
+
+          {/* Pattern Designs */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              
+            </div>
+            <div className="h-80 md:h-[32rem] flex items-center justify-center overflow-hidden">
+              <img src={pattern2} alt="Pattern 2" className="w-full h-full object-contain" />
+            </div>
+            <div className="h-80 flex items-center justify-center overflow-hidden">
+              
+            </div>
+          </div>
+
+          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
+            est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
+          </p>
+
+          {/* Large Illustration Showcase */}
+          <div className="mb-16">
+            <img src={pattern1} alt="Large Pattern Illustration" className="w-full max-w-4xl mx-auto" />
+          </div>
+
+          
 
           {/* See Also Section */}
           <div className="mb-24">
             <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => (
-                <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
+              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
                       Read More →
                     </Button>
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -132,8 +130,6 @@ const IconsIllustrations = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default IconsIllustrations;
