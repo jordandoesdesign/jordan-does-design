@@ -90,8 +90,8 @@ const IconsIllustrations = () => {
           </p>
 
           {/* Large Illustration Showcase */}
-          <div className="mb-24">
-            
+          <div className="mb-16">
+            <img src={pattern1} alt="Large Pattern Illustration" className="w-full max-w-4xl mx-auto" />
           </div>
 
           
