@@ -71,7 +71,7 @@ const CanvaTemplates = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
               <div className="space-y-6">
                 <div className="h-48 md:h-[18rem] flex items-center justify-center overflow-hidden">
-                  <img alt="Pinterest template detail" className="w-full h-full object-contain" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" />
+                  <img alt="Pinterest template detail" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
                 </div>
                 <div className="h-64 md:h-[22rem] flex items-center justify-center overflow-hidden">
                   <img alt="Pinterest template layout" className="w-full h-full object-contain" src="/lovable-uploads/73d84817-27a4-432b-b2d2-5f83798612ab.png" />
