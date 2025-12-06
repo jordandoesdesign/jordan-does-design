@@ -38,27 +38,6 @@ export type Database = {
         }
         Relationships: []
       }
-      contact_submissions_old: {
-        Row: {
-          created_at: string | null
-          email: string
-          message: string
-          name: string
-        }
-        Insert: {
-          created_at?: string | null
-          email: string
-          message: string
-          name: string
-        }
-        Update: {
-          created_at?: string | null
-          email?: string
-          message?: string
-          name?: string
-        }
-        Relationships: []
-      }
     }
     Views: {
       [_ in never]: never
