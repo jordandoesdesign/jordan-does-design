@@ -109,7 +109,7 @@ const PinterestGraphics = () => {
                   <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
-                  <img src={canvaIcons} alt="Icon Set detail" className="w-full h-full object-contain" />
+                  <img alt="Icon Set detail" className="w-full h-full object-contain" src="/lovable-uploads/b9825e9e-65aa-4851-926e-ac9dad7f3fb2.png" />
                 </div>
               </div>
               <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
