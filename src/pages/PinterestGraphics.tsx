@@ -26,15 +26,12 @@ const PinterestGraphics = () => {
       
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-8">
-            Canva Pinterest
-          </h1>
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-8">
-            Graphics
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-8">Canva Pinterest
+Templates</h1>
+          
           
           <div className="flex flex-wrap justify-center gap-4 text-sm text-primary mb-12">
-            <span className="text-base text-center">✿ Pinterest Social Media Templates ✿</span>
+            <span className="text-base text-center">✿ Pinterest Templates ✿  Social Media Templates ✿ Canva Templates ✿ </span>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
