@@ -27,8 +27,7 @@ const About = () => {
                 About
               </h1>
               <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
-                Hi! I'm a digital designer in Portland, OR. I make Logos, Social Campaigns, and Canva
-                templates so that small business owners can connect with their audiences.
+                I'm a digital designer in Portland, OR. I make Logos, Social Campaigns, and Canva templates so that small business owners can connect with their audiences.
               </p>
             </div>
           </div>
