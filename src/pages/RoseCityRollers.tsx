@@ -63,23 +63,17 @@ const RoseCityRollers = () => {
               est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
             </p>
 
-            {/* Campaign Assets Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-2 ">
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={rollersEventPoster} alt="Event Logo" className="w-full h-full object-contain" />
+            {/* Campaign Assets Grid - Horizontal row on desktop */}
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={rollersEventPoster} alt="Event Logo" className="h-full object-contain" />
               </div>
-              <div className="grid grid-cols-1 gap-0">
-                <div className="h-32 flex items-center justify-center overflow-hidden">
-                  
-                </div>
-                <div className="h-48 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra2} alt="Roller derby social post" className="w-full h-full object-contain" />
-                </div>
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={rollersExtra2} alt="Roller derby social post" className="h-full object-contain" />
               </div>
-            </div>
-
-            <div className="h-96 mb-16 flex items-center justify-center overflow-hidden">
-              <img src={rollersBracket} alt="Tournament Bracket" className="w-full h-full object-contain" />
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={rollersBracket} alt="Tournament Bracket" className="h-full object-contain" />
+              </div>
             </div>
           </div>
 
@@ -97,23 +91,13 @@ const RoseCityRollers = () => {
               est, eget convallis tortor.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-8 mb-16">
-              <div className="h-80 flex items-center justify-center overflow-hidden">
-                <img src={rollersBootcamp} alt="Event Poster" className="w-full h-full object-contain" />
+            {/* Bootcamp images - Horizontal row on desktop */}
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={rollersBootcamp} alt="Event Poster" className="h-full object-contain" />
               </div>
-              <div className="grid grid-cols-2 gap-4 w-full m-full">
-                <div className="h-36 flex items-center justify-center overflow-hidden">
-                  
-                </div>
-                <div className="h-36 flex items-center justify-center overflow-hidden">
-                  
-                </div>
-                <div className="h-36 flex items-center justify-center overflow-hidden">
-                  
-                </div>
-                <div className="h-36 flex items-center justify-center overflow-hidden">
-                  <img src={rollersExtra1} alt="Bootcamp detail badge" className="w-full h-full object-contain" />
-                </div>
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={rollersExtra1} alt="Bootcamp detail badge" className="h-full object-contain" />
               </div>
             </div>
           </div>
