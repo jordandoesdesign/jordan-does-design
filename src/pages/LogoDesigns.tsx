@@ -90,7 +90,7 @@ const LogoDesigns = () => {
           <div className="mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-6 max-w-5xl mx-auto justify-items-center">
               {initialLogos.map((logo, index) => <div key={index} className="space-y-4 flex flex-col items-center">
-                  <div className="w-[280px] md:w-[320px] lg:w-[400px] h-[280px] md:h-[320px] lg:h-[400px] overflow-hidden">
+                  <div className="w-[280px] md:w-[320px] lg:w-[300px] h-[280px] md:h-[320px] lg:h-[300px] overflow-hidden">
                     <img src={logo.image} alt={`${logo.name} logo`} className="w-full h-full object-contain" />
                   </div>
                   <div className="text-center">
