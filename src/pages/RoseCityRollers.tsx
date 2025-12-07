@@ -11,6 +11,7 @@ import rollersExtra1 from "@/assets/rollers-extra-1.png";
 import rollersExtra2 from "@/assets/rollers-extra-2.png";
 import rollersExtra3 from "@/assets/rollers-extra-3.png";
 import rollersExtra4 from "@/assets/rollers-extra-4.png";
+import socialMediaDerbyDaze from "@/assets/assets_SocialMediaDerbyDaze.png";
 const RoseCityRollers = () => {
   const seeAlsoProjects = [{
     title: "Canva Pinterest Graphics",
@@ -98,6 +99,9 @@ const RoseCityRollers = () => {
               </div>
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
                 <img src={rollersExtra1} alt="Bootcamp detail badge" className="h-full object-contain" />
+              </div>
+              <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
+                <img src={socialMediaDerbyDaze} alt="Derby Daze social media graphic" className="h-full object-contain" />
               </div>
             </div>
           </div>

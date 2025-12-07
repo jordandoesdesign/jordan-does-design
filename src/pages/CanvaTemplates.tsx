@@ -88,11 +88,11 @@ const CanvaTemplates = () => {
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
               Pinterest Templates in Canva
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
+              <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
               </div>
-              <div className="space-y-4">
+              <div className="w-full md:w-64 space-y-4">
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                   <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
                 </div>
@@ -100,7 +100,7 @@ const CanvaTemplates = () => {
                   <img alt="Additional Pinterest template in Canva" className="w-full h-full object-contain" src="/lovable-uploads/7a8bc8a7-66fe-4d3a-aa22-36d41b14ea1f.png" />
                 </div>
               </div>
-              <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
+              <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-contain" />
               </div>
             </div>

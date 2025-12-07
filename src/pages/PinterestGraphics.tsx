@@ -109,9 +109,6 @@ Templates</h1>
                   <img alt="Icon Set detail" className="w-full h-full object-contain" src="/lovable-uploads/b9825e9e-65aa-4851-926e-ac9dad7f3fb2.png" />
                 </div>
               </div>
-              <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
-                <img src={templateWithIcons} alt="Template with Icons detail" className="w-full h-full object-contain" />
-              </div>
             </div>
           </div>
 
