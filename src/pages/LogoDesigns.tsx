@@ -145,10 +145,7 @@ const LogoDesigns = () => {
               </div>
             </div>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium
-              est, eget convallis tortor.
-            </p>
+            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">I love creating brands that feel like a true reflection of the business.  Brand guidelines can help your visuals stay consistent and help you generate content quickly across print and digital channels.</p>
 
             {/* Peralta Images */}
             <div className="grid grid-cols-2 md:grid-cols-2 gap-2 lg:gap-4 mb-7">
