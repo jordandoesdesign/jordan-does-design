@@ -73,7 +73,7 @@ const RoseCityRollers = () => {
                 <img src={rollersExtra2} alt="Roller derby social post" className="h-full object-contain" />
               </div>
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
-                <img src={rollersBracket} alt="Tournament Bracket" className="h-full object-contain" />
+                <img alt="Tournament Bracket" className="h-full object-contain" src="/lovable-uploads/58956fbd-69b0-41e7-bb7d-eace8a360256.png" />
               </div>
             </div>
           </div>
