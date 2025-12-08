@@ -108,11 +108,12 @@ const LogoDesigns = () => {
                 Greenroom
               </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
-                <span className="text-base">Logo Design</span>
+                <span className="text-base">✿   Logo Design</span>
                 <span className="text-base">✿</span>
                 <span className="text-base">Brand Design</span>
                 <span className="text-base">✿</span>
-                <span className="text-base">Brand Style Guides</span>
+                <span className="text-base">Brand Style Guides   ✿
+              </span>
               </div>
             </div>
 
