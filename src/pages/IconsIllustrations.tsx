@@ -54,8 +54,8 @@ const IconsIllustrations = () => {
             A collection of custom illustrations, icons, and pattern designs created for various clients and personal projects.
           </p>
 
-          {/* Carousel Section */}
-          <div className="mb-24">
+          {/* Carousel Section - Desktop Only */}
+          <div className="mb-24 hidden lg:block">
             <div className="bg-white p-8 md:p-12 rounded-none shadow-sm">
               <Carousel className="w-full" opts={{ loop: true }}>
                 <div className="flex items-center">
@@ -67,18 +67,18 @@ const IconsIllustrations = () => {
                     <CarouselContent>
                       {carouselImages.map((image, index) => (
                         <CarouselItem key={index}>
-                          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-4">
+                          <div className="flex flex-row items-center gap-12 p-4">
                             {/* Image */}
-                            <div className="w-full md:w-1/2 flex items-center justify-center">
+                            <div className="w-1/2 flex items-center justify-center">
                               <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="max-h-[400px] md:max-h-[500px] w-auto object-contain"
+                                className="max-h-[500px] w-auto object-contain"
                               />
                             </div>
                             {/* Caption */}
-                            <div className="w-full md:w-1/2 text-center md:text-left">
-                              <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
+                            <div className="w-1/2 text-left">
+                              <h3 className="text-3xl font-heading font-bold text-foreground mb-4">
                                 {image.alt}
                               </h3>
                               <p className="text-muted-foreground text-lg leading-relaxed">
@@ -96,6 +96,31 @@ const IconsIllustrations = () => {
                 </div>
               </Carousel>
             </div>
+          </div>
+
+          {/* Stacked Layout - Tablet and Mobile Only */}
+          <div className="mb-24 lg:hidden space-y-16">
+            {carouselImages.map((image, index) => (
+              <div key={index} className="flex flex-col items-center gap-6">
+                {/* Image */}
+                <div className="w-full flex items-center justify-center">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="max-h-[350px] w-auto object-contain"
+                  />
+                </div>
+                {/* Caption */}
+                <div className="w-full text-center px-4">
+                  <h3 className="text-2xl font-heading font-bold text-foreground mb-3">
+                    {image.alt}
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    {image.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* See Also Section */}
