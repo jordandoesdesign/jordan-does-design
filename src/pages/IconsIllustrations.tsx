@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import illustrationItems from "@/assets/illustration-items.png";
 import lasagnaIllustration from "@/assets/lasagna-illustration.png";
@@ -19,6 +21,25 @@ import pattern2 from "@/assets/pattern-2.png";
 import pattern3 from "@/assets/pattern-3.png";
 
 const IconsIllustrations = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  const scrollTo = useCallback((index: number) => {
+    api?.scrollTo(index);
+  }, [api]);
+
   const seeAlsoProjects = [{
     title: "Canva Template Design",
     link: "/work/canva-templates"
@@ -57,17 +78,17 @@ const IconsIllustrations = () => {
           {/* Carousel Section - Desktop Only */}
           <div className="mb-24 hidden lg:block">
             <div className="bg-white p-8 md:p-12 rounded-none shadow-sm">
-              <Carousel className="w-full" opts={{ loop: true }}>
-                <div className="flex items-center">
+              <Carousel className="w-full" opts={{ loop: true }} setApi={setApi}>
+                <div className="flex items-center justify-center">
                   {/* Left Arrow */}
                   <CarouselPrevious className="relative left-0 translate-y-0 h-12 w-12 aspect-square border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110 active:scale-95" />
                   
                   {/* Carousel Content */}
-                  <div className="flex-1 mx-4 md:mx-8">
+                  <div className="flex-1 mx-4 md:mx-8 flex justify-center">
                     <CarouselContent>
                       {carouselImages.map((image, index) => (
                         <CarouselItem key={index}>
-                          <div className="flex flex-row items-center gap-12 p-4">
+                          <div className="flex flex-row items-center justify-center gap-12 p-4">
                             {/* Image */}
                             <div className="w-1/2 flex items-center justify-center">
                               <img
@@ -93,6 +114,22 @@ const IconsIllustrations = () => {
                   
                   {/* Right Arrow */}
                   <CarouselNext className="relative right-0 translate-y-0 h-12 w-12 aspect-square border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110 active:scale-95" />
+                </div>
+                
+                {/* Dot Indicators */}
+                <div className="flex justify-center gap-2 mt-8">
+                  {Array.from({ length: count }).map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => scrollTo(index)}
+                      className={`h-3 w-3 rounded-full transition-all duration-300 ease-out hover:scale-125 ${
+                        index === current
+                          ? "bg-primary scale-110"
+                          : "bg-primary/30 hover:bg-primary/50"
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ))}
                 </div>
               </Carousel>
             </div>
