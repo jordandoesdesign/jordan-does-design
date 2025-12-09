@@ -111,8 +111,7 @@ const RoseCityRollers = () => {
             </h2>
             
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-              est, eget convallis tortor.
+              Social media designs to increase fan engagement and promote ticket sales to a roller derby tournament
             </p>
 
             <div className="h-96 mb-8 flex items-center justify-center overflow-hidden">
