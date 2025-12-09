@@ -37,20 +37,14 @@ const CanvaTemplates = () => {
             <span className="text-base">Pinterest Templates  ✿</span>
           </div>
 
-          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere lectus. 
-            Morbi ut commodo enim, nec consequat velit. Proin a.
-          </p>
+          
 
           {/* Main Template Image */}
           <div className="mb-16">
             <img src={canvaMealPlan} alt="Weekly Meal Plan Template" className="w-full max-w-2xl mx-auto shadow-lg" />
           </div>
 
-          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-            est, eget convallis tortor. Integer sodales, nulla vel varius placerat.
-          </p>
+          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">The creator foodwithfeeling.com had an </p>
 
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -59,10 +53,7 @@ const CanvaTemplates = () => {
             </div>
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
-              <p className="text-muted-foreground">
-                Hi I'm a bit of designer in house Logos, Social Campaign, &
-                graphic templates that connect with audiences.
-              </p>
+              <p className="text-muted-foreground">The creator foodwithfeeling.com wanted to share weekly meal plans with followers. By creating editing templates in Canva, we were able to create a toold </p>
             </div>
           </div>
 
