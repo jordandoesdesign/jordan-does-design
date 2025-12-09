@@ -82,8 +82,10 @@ const LogoDesigns = () => {
             Logo Design
           </h1>
           <p className="text-center text-muted-foreground text-lg mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere lectus. 
-            Morbi ut commodo enim, nec consequat velit. Proin a.
+            I love designing new logos as well as helping brands who want to update their existing logos. I specialize in brand design for small business owners and content creators in the lifestyle, food, and wellness industries.
+
+
+
           </p>
 
           {/* Initial Logo Grid */}
