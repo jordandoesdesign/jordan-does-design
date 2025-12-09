@@ -93,8 +93,7 @@ Templates</h1>
               Editable Icons in Canva
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-              est, eget convallis tortor.
+              We created a custom icon set in Canva that matches the brand. This is a fun element that can be added to any of the templates and makes the images more engaging to the audience as they scroll through the social platform. 
             </p>
             <div className="space-y-8">
               <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
