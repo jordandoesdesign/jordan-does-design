@@ -34,10 +34,7 @@ Templates</h1>
             <span className="text-base text-center">✿ Pinterest Templates ✿  Social Media Templates ✿ Canva Templates ✿ </span>
           </div>
 
-          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed 
-            posuere lectus. Morbi ut commodo enim, nec consequat velit.
-          </p>
+          
 
           {/* First Pinterest Graphics Showcase */}
           <div className="mb-16">
@@ -47,8 +44,9 @@ Templates</h1>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-            est, eget convallis tortor.
+            I love to work with content creators to help them create templates that match their brand and help them quickly post new content.  
+ 
+
           </p>
 
           {/* Badge and Graphics Grid */}
