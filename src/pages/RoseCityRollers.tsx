@@ -41,15 +41,12 @@ const RoseCityRollers = () => {
             <span className="text-base">Social Media Campaign ✿</span>
           </div>
 
-          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere lectus. 
-            Morbi ut commodo enim, nec consequat velit. Proin a lacus leo.
-          </p>
+          
 
           {/* Event Logo Section */}
           <div className="mb-24">
             <div className="mb-12">
-              <img alt="Rose City Rollers Event Graphics" className="w-full  object-scale-down shadow-none" src="/lovable-uploads/7550ba8e-b778-4e3c-9081-0c247d3fa9b5.png" />
+              <img alt="Rose City Rollers Event Graphics" src="/lovable-uploads/7550ba8e-b778-4e3c-9081-0c247d3fa9b5.png" className="w-full shadow-none object-contain" />
             </div>
 
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-8">
