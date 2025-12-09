@@ -84,8 +84,7 @@ const RoseCityRollers = () => {
             </h2>
             
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis pretium 
-              est, eget convallis tortor.
+              Promotional designs to boost sales for a roller derby training event
             </p>
 
             {/* Bootcamp images - Horizontal row on desktop */}
