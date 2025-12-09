@@ -81,7 +81,7 @@ const LogoDesigns = () => {
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-4">
             Logo Design
           </h1>
-          <p className="text-center text-muted-foreground text-lg mb-16 max-w-3xl mx-auto">
+          <p className="text-center text-muted-foreground text-lg mb-16 max-w-3xl mx-auto pt-[20px]">
             I love designing new logos as well as helping brands who want to update their existing logos. I specialize in brand design for small business owners and content creators in the lifestyle, food, and wellness industries.
 
 
