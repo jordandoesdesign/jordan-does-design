@@ -69,7 +69,9 @@ Templates</h1>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
+            
             The client, unboundwellness.com, creates and shares recipes on social media channels. By creating editable templates in Canva, new recipe images can be created quickly and the brand maintains a consistent look across the social platform. 
+           
           </p>
 
           {/* Three Pinterest Pins Grid */}
