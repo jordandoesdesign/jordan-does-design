@@ -82,7 +82,7 @@ const CanvaTemplates = () => {
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
               Pinterest Templates in Canva
             </h2>
-            <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
+            <div className="flex flex-col md:flex-row gap-8 items-start md:items-center md:justify-center md:mx-auto">
               <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
               </div>
