@@ -153,7 +153,8 @@ const IconsIllustrations = () => {
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
                   <Link to={project.link}>
                     <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
-                      Read More →
+                      A collection of fun stickers to use in a digital planner app.  
+
                     </Button>
                   </Link>
                 </div>)}
