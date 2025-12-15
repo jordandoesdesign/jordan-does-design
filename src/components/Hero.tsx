@@ -25,10 +25,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Arrow Decoration */}
-            <div className="text-primary mt-2">
-              <img src={heroArrow} alt="Curved decorative arrow" className="w-[10px] h-[56px]" />
-            </div>
           </div>
 
           {/* Character Illustration */}

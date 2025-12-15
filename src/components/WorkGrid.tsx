@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroArrow from "@/assets/assets_Arrow.svg";
 import logoGrid from "@/assets/logo-grid.png";
 import canvaMealPlan from "@/assets/canva-meal-plan.png";
 import surriMockup from "@/assets/surri-mockup.png";
@@ -75,8 +76,10 @@ const ProjectCard = ({
 const WorkGrid = () => {
   return <section className="py-16 px-6">
       <div className="container mx-auto">
-        {/* Curly arrows decoration */}
-        
+        {/* Arrow decoration */}
+        <div className="mb-6">
+          <img src={heroArrow} alt="Curved decorative arrow" className="w-[17.5px] h-[98px]" />
+        </div>
         
         <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-12">
           My work
