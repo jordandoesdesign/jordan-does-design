@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 items-center">
           {/* Text Content */}
-          <div className="mx-0 px-0 mr-[150px]">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap text-right lg:text-5xl">
+          <div className="mx-0 px-0 mr-[150px] ml-px">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-4 whitespace-nowrap text-right lg:text-5xl px-0">
               Hi, I'm
             </h1>
             <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary mb-4 whitespace-nowrap text-right lg:text-7xl px-0">
@@ -20,7 +20,7 @@ const Hero = () => {
             {/* Marquee Services */}
             <div className="overflow-hidden whitespace-nowrap mb-8">
               <div className="inline-block animate-marquee pr-0 mr-0">
-                <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
+                <span className="text-lg text-primary font-medium mx-[100px] px-0 py-[10px] md:text-2xl">{services}</span>
                 <span className="text-lg md:text-xl text-primary font-medium pr-0 mr-0">{services}</span>
               </div>
             </div>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
           {/* Character Illustration */}
-          <div className="flex justify-center lg:flex lg:items-start lg:justify-center">
+          <div className="flex justify-center lg:flex lg:items-center lg:justify-start">
             <div className="w-full max-w-md h-96 overflow-hidden animate-float">
               <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
             </div>
