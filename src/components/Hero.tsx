@@ -27,16 +27,12 @@ const Hero = () => {
 
             {/* Arrow Decoration */}
             <div className="text-primary mt-2">
-              <img
-                src={heroArrow}
-                alt="Curved decorative arrow"
-                className="w-[10px] h-[56px]"
-              />
+              <img src={heroArrow} alt="Curved decorative arrow" className="w-[10px] h-[56px]" />
             </div>
           </div>
 
           {/* Character Illustration */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:flex lg:items-start lg:justify-start">
             <div className="w-full max-w-md h-96 overflow-hidden animate-float">
               <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
             </div>
