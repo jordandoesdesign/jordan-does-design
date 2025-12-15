@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           {/* Text Content */}
-          <div className="mx-[30px] px-[30px] mr-[10px] ml-[80px] pr-[50px] pl-[90px]">
+          <div className="mr-[10px] ml-[80px] pr-[50px] pl-[90px] mx-0 px-0">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
               Hi, I'm
             </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
           {/* Character Illustration */}
-          <div className="flex justify-center lg:flex lg:items-start lg:justify-start">
+          <div className="flex justify-center lg:flex lg:items-start lg:justify-center">
             <div className="w-full max-w-md h-96 overflow-hidden animate-float">
               <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
             </div>
