@@ -4,7 +4,7 @@ const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
   return <section className="pt-32 pb-16 md:pb-24 px-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 items-center">
           {/* Text Content */}
           <div className="mx-0 px-0 mr-[150px] ml-px">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-4 whitespace-nowrap text-right lg:text-5xl px-0">
