@@ -94,14 +94,14 @@ const IconsIllustrations = () => {
                   <div className="flex-1 mx-4 md:mx-8 flex justify-center">
                     <CarouselContent>
                       {carouselImages.map((image, index) => <CarouselItem key={index}>
-                          <div className="flex flex-row items-center justify-center gap-12 p-4">
+                          <div className="flex flex-col items-center justify-between p-4 min-h-[550px]">
                             {/* Image */}
-                            <div className="w-1/2 flex items-center justify-center">
-                              <img src={image.src} alt={image.alt} className="max-h-[500px] w-auto object-contain" />
+                            <div className="flex-1 flex items-center justify-center">
+                              <img src={image.src} alt={image.alt} className="max-h-[400px] w-auto object-contain" />
                             </div>
                             {/* Caption */}
-                            <div className="w-1/2 text-left">
-                              <h3 className="text-3xl font-heading font-bold text-foreground mb-4">
+                            <div className="text-center mt-6">
+                              <h3 className="text-3xl font-heading font-bold text-foreground mb-2">
                                 {image.alt}
                               </h3>
                               <p className="text-muted-foreground text-lg leading-relaxed">
