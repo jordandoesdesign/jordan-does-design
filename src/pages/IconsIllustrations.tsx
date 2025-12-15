@@ -39,32 +39,32 @@ const IconsIllustrations = () => {
   }];
   const carouselImages = [{
     src: illustrationItems,
-    alt: "Illustration Items",
-    caption: "Custom illustration items designed for various client projects, featuring food icons and everyday objects."
+    alt: "Digital Sticker Set",
+    caption: "Stickers used for a digital planner app"
   }, {
     src: lasagnaIllustration,
     alt: "Lasagna Illustration",
-    caption: "A detailed lasagna illustration showcasing layered pasta, cheese, and sauce in a warm, inviting style."
+    caption: "An illustrated recipe"
   }, {
     src: iceCreamIllustration,
     alt: "Ice Cream Illustration",
-    caption: "Playful ice cream cone illustrations with colorful scoops and toppings."
+    caption: "Illustration and custom lettering for a greeting card design"
   }, {
     src: characterSketches,
-    alt: "Character Sketches",
-    caption: "Character concept sketches exploring different expressions and poses."
+    alt: "Fruit Illustration",
+    caption: "A collection of illustrations created for fruit inspired beverages"
   }, {
     src: pattern1,
-    alt: "Pattern Design 1",
-    caption: "Seamless pattern design featuring organic shapes and vibrant colors."
+    alt: "Merch Design",
+    caption: "Custom merch design featuring illustration and lettering"
   }, {
     src: pattern2,
-    alt: "Pattern Design 2",
-    caption: "Geometric pattern with bold lines and complementary color palette."
+    alt: "Journal Set",
+    caption: "Repeat patterns created for office journals"
   }, {
     src: pattern3,
-    alt: "Pattern Design 3",
-    caption: "Nature-inspired pattern with floral and botanical elements."
+    alt: "Seasonal Illustration",
+    caption: "Custom lettering for a greeting card"
   }];
   return <div className="min-h-screen bg-background">
       <Navigation />
