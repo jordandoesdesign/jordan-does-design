@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
+import SeeAlsoSection from "@/components/SeeAlsoSection";
 import illustrationItems from "@/assets/illustration-items.png";
 import lasagnaIllustration from "@/assets/lasagna-illustration.png";
 import iceCreamIllustration from "@/assets/ice-cream-illustration.png";
@@ -146,20 +147,7 @@ const IconsIllustrations = () => {
           </div>
 
           {/* See Also Section */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
-                  <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-                  <Link to={project.link}>
-                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
-                      A collection of fun stickers to use in a digital planner app.  
-
-                    </Button>
-                  </Link>
-                </div>)}
-            </div>
-          </div>
+          <SeeAlsoSection projects={seeAlsoProjects} />
 
           {/* Let's Work Together CTA */}
           <div className="text-center py-16">
