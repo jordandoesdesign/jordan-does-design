@@ -7,13 +7,13 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           {/* Text Content */}
           <div className="mx-[30px] px-[30px]">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 whitespace-nowrap px-0">
               Hi, I'm
             </h1>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
               Jordan
             </h1>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl px-[40px] pb-0 py-[14px] pt-[35px] whitespace-nowrap">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl pb-0 py-[14px] pt-[35px] whitespace-nowrap px-0">
               I design
             </h1>
             
@@ -27,11 +27,7 @@ const Hero = () => {
 
             {/* Arrow Decoration */}
             <div className="text-primary mt-2">
-              <img
-                src={heroArrow}
-                alt="Curved decorative arrow"
-                className="w-[10px] h-[56px]"
-              />
+              <img src={heroArrow} alt="Curved decorative arrow" className="w-[10px] h-[56px]" />
             </div>
           </div>
 
