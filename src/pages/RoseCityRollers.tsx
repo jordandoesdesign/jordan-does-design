@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
+import SeeAlsoSection from "@/components/SeeAlsoSection";
 import roseCityRollers from "@/assets/rose-city-rollers.png";
 import rollersEventPoster from "@/assets/rollers-event-poster.png";
 import rollersBracket from "@/assets/rollers-bracket.png";
@@ -129,19 +130,7 @@ const RoseCityRollers = () => {
           </div>
 
           {/* See Also Section */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-8">See also</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {seeAlsoProjects.map((project, index) => <div key={index} className="bg-[#FFE8E0] p-8 h-64 flex flex-col justify-between">
-                  <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-                  <Link to={project.link}>
-                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-fit">
-                      Read More →
-                    </Button>
-                  </Link>
-                </div>)}
-            </div>
-          </div>
+          <SeeAlsoSection projects={seeAlsoProjects} />
 
           {/* Let's Work Together CTA */}
           <div className="text-center py-16">
