@@ -4,7 +4,7 @@ const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
   return <section className="pt-32 pb-16 md:pb-24 px-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           {/* Text Content */}
           <div className="mx-[30px] px-[30px]">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
@@ -37,7 +37,7 @@ const Hero = () => {
 
           {/* Character Illustration */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md h-96 overflow-hidden">
+            <div className="w-full max-w-md h-96 overflow-hidden animate-float">
               <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
             </div>
           </div>
