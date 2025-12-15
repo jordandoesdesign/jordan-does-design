@@ -74,10 +74,10 @@ const ProjectCard = ({
     </div>;
 };
 const WorkGrid = () => {
-  return <section className="py-16 px-6">
+  return <section className="px-6 py-0 pt-0">
       <div className="container mx-auto">
         {/* Arrow decoration */}
-        <div className="mb-6">
+        <div className="mb-[50px]">
           <img src={heroArrow} alt="Curved decorative arrow" className="w-[17.5px] h-[98px]" />
         </div>
         
