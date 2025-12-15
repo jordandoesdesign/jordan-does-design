@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           {/* Text Content */}
-          <div className="mx-0 px-0">
+          <div className="mx-0 px-0 mr-[150px]">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
               Hi, I'm
             </h1>
@@ -19,9 +19,9 @@ const Hero = () => {
             
             {/* Marquee Services */}
             <div className="overflow-hidden whitespace-nowrap mb-8">
-              <div className="inline-block animate-marquee">
+              <div className="inline-block animate-marquee pr-0 mr-0">
                 <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
-                <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
+                <span className="text-lg md:text-xl text-primary font-medium pr-0 mr-0">{services}</span>
               </div>
             </div>
 
