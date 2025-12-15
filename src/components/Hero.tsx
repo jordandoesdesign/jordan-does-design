@@ -2,11 +2,11 @@ import heroArrow from "@/assets/assets_Arrow.svg";
 import heroCharacter from "@/assets/hero-character.png";
 const Hero = () => {
   const services = " ✿ Logo Designs ✿ Brochures ✿ Social Media Templates ✿ Canva Templates ✿ eBooks ";
-  return <section className="pt-32 pb-16 md:pb-24 px-6">
-      <div className="container mx-auto">
+  return <section className="pt-32 pb-16 md:pb-24">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           {/* Text Content */}
-          <div className="mx-0 px-0 mr-[150px]">
+          <div className="mx-0 px-0 lg:mr-[150px]">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap">
               Hi, I'm
             </h1>
@@ -17,16 +17,8 @@ const Hero = () => {
               I design
             </h1>
             
-            {/* Marquee Services */}
-            <div className="overflow-hidden whitespace-nowrap mb-8">
-              <div className="inline-block animate-marquee pr-0 mr-0">
-                <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
-                <span className="text-lg md:text-xl text-primary font-medium pr-0 mr-0">{services}</span>
-              </div>
-            </div>
-
-            {/* Arrow Decoration */}
-            <div className="text-primary mt-2">
+            {/* Arrow Decoration - Desktop only */}
+            <div className="text-primary mt-2 hidden lg:block">
               <img src={heroArrow} alt="Curved decorative arrow" className="w-[10px] h-[56px]" />
             </div>
           </div>
@@ -38,6 +30,29 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Marquee Services - Full width on mobile/tablet */}
+      <div className="overflow-hidden whitespace-nowrap my-8 lg:hidden">
+        <div className="inline-block animate-marquee pr-0 mr-0">
+          <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
+          <span className="text-lg md:text-xl text-primary font-medium pr-0 mr-0">{services}</span>
+        </div>
+      </div>
+      
+      {/* Marquee Services - Desktop (inside container) */}
+      <div className="container mx-auto px-6">
+        <div className="overflow-hidden whitespace-nowrap mb-8 hidden lg:block lg:mr-[150px]">
+          <div className="inline-block animate-marquee pr-0 mr-0">
+            <span className="text-lg md:text-xl text-primary font-medium px-[30px]">{services}</span>
+            <span className="text-lg md:text-xl text-primary font-medium pr-0 mr-0">{services}</span>
+          </div>
+        </div>
+      </div>
+      
+      {/* Arrow Decoration - Mobile/Tablet centered below illustration */}
+      <div className="flex justify-center lg:hidden">
+        <img src={heroArrow} alt="Curved decorative arrow" className="w-[10px] h-[56px]" />
       </div>
     </section>;
 };
