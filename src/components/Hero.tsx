@@ -10,7 +10,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap text-right lg:text-5xl">
               Hi, I'm
             </h1>
-            <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary mb-4 px-[20px] whitespace-nowrap text-right lg:text-7xl">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary mb-4 whitespace-nowrap text-right lg:text-7xl px-0">
               Jordan
             </h1>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary mb-8 lg:text-5xl pb-0 pt-[35px] whitespace-nowrap text-right py-0 px-0">
