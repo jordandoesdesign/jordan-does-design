@@ -17,7 +17,7 @@ const About = () => {
             {/* Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-56 h-56 flex items-center justify-center overflow-hidden">
-                <img src={jordanPortrait} alt="Jordan Veirs" className="w-full h-full object-contain" />
+                <img src={jordanPortrait} alt="Jordan Veirs, graphic designer based in Portland Oregon, professional headshot illustration" className="w-full h-full object-contain" />
               </div>
             </div>
 

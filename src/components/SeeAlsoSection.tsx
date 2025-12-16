@@ -40,7 +40,7 @@ const SeeAlsoSection = ({ projects }: SeeAlsoSectionProps) => {
                 <AspectRatio ratio={40 / 27}>
                   <img
                     src={projectImageMap[project.link]}
-                    alt={project.title}
+                    alt={`Preview thumbnail for ${project.title} design project`}
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>

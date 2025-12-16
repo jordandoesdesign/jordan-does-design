@@ -59,7 +59,7 @@ const ProjectCard = ({
       <Link to={project.link}>
         <div className="overflow-hidden mb-4 transition-transform duration-300 hover:scale-105 cursor-pointer">
           <AspectRatio ratio={40 / 27}>
-            <img src={imageMap[project.id]} alt={project.title} className="w-full h-full object-scale-down" />
+            <img src={imageMap[project.id]} alt={`${project.title} - ${project.description}`} className="w-full h-full object-scale-down" />
           </AspectRatio>
         </div>
       </Link>
@@ -78,7 +78,7 @@ const WorkGrid = () => {
       <div className="container mx-auto">
         {/* Arrow decoration */}
         <div className="mb-[50px]">
-          <img src={heroArrow} alt="Curved decorative arrow" className="w-[17.5px] h-[98px]" />
+          <img src={heroArrow} alt="Decorative curved arrow pointing downward to portfolio work section" className="w-[17.5px] h-[98px]" />
         </div>
         
         <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-12">
