@@ -1,18 +1,42 @@
-# Welcome to your Lovable project
+# Jordan Does Design
 
-## Project info
+A portfolio website showcasing digital design services including logo design, social media templates, Canva templates, and custom illustrations for small business owners and content creators.
 
-**URL**: https://lovable.dev/projects/8e151add-cdf7-4ebc-a7ad-a13bdade346c
+🌐 **Live Site**: [JordanDoesDesign.com](https://jordandoesdesign.com)
 
-## How can I edit this code?
+## About
 
-There are several ways of editing your application.
+Jordan Does Design is a digital design studio based in Portland, OR, specializing in helping small businesses and content creators connect with their audiences through thoughtful visual design.
 
-**Use Lovable**
+## Services
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8e151add-cdf7-4ebc-a7ad-a13bdade346c) and start prompting.
+- **Logo & Brand Design** - Complete visual identity development from concept to completion
+- **Social Media Templates** - Custom design templates for engaging social content
+- **Canva Templates** - Time-saving design tools for consistent branding
+- **Digital Illustration** - Custom icons, stickers, apparel designs, and more
+- **Brochures & eBooks** - Print and digital marketing materials
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
+
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Routing**: React Router
+- **Deployment**: GitHub Pages
+- **Domain**: Namecheap (custom domain)
+- **Development**: Built with [Lovable.dev](https://lovable.dev)
+
+
+## Contributing
+
+This is a personal portfolio site. If you notice any issues, please open an issue in the repository.
+
+## License
+
+© 2024 Jordan Does Design. All rights reserved.
+
 
 **Use your preferred IDE**
 
@@ -50,24 +74,8 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Built with ❤️ in Portland, OR
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8e151add-cdf7-4ebc-a7ad-a13bdade346c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
