@@ -14,6 +14,7 @@ import PinterestGraphics from "./pages/PinterestGraphics";
 import RoseCityRollers from "./pages/RoseCityRollers";
 import IconsIllustrations from "./pages/IconsIllustrations";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work" element={<Work />} />
