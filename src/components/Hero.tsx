@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Character Illustration */}
           <div className="flex justify-center lg:flex lg:items-start lg:justify-center">
             <div className="w-full max-w-md h-auto lg:h-96 overflow-hidden animate-float py-0 px-[30px]">
-              <img src={heroCharacter} alt="Graphic Design Portfolio" className="w-full h-full object-scale-down" />
+              <img src={heroCharacter} alt="Illustrated character of Jordan, a graphic designer holding design tools, representing creative portfolio work" className="w-full h-full object-scale-down" />
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const RoseCityRollers = () => {
           {/* Event Logo Section */}
           <div className="mb-24">
             <div className="mb-12">
-              <img alt="Rose City Rollers Event Graphics" src="/lovable-uploads/7550ba8e-b778-4e3c-9081-0c247d3fa9b5.png" className="w-full shadow-none object-scale-down" />
+              <img alt="Rose City Rollers roller derby event graphics showcasing tournament branding and social media campaign designs" src="/lovable-uploads/7550ba8e-b778-4e3c-9081-0c247d3fa9b5.png" className="w-full shadow-none object-scale-down" />
             </div>
 
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-8">
@@ -64,13 +64,13 @@ const RoseCityRollers = () => {
             {/* Campaign Assets Grid - Horizontal row on desktop */}
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
-                <img src={rollersEventPoster} alt="Event Logo" className="h-full object-contain" />
+                <img src={rollersEventPoster} alt="Hometown Throwdown roller derby tournament event logo with bold typography and athletic design" className="h-full object-contain" />
               </div>
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
                 <img src={rollersExtra2} alt="Roller derby social post" className="h-full object-contain" />
               </div>
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
-                <img alt="Tournament Bracket" className="h-full object-contain" src="/lovable-uploads/58956fbd-69b0-41e7-bb7d-eace8a360256.png" />
+                <img alt="Tournament bracket graphic showing roller derby team matchups and competition schedule" className="h-full object-contain" src="/lovable-uploads/58956fbd-69b0-41e7-bb7d-eace8a360256.png" />
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ const RoseCityRollers = () => {
             {/* Bootcamp images - Horizontal row on desktop */}
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
-                <img src={rollersBootcamp} alt="Event Poster" className="h-full object-contain" />
+                <img src={rollersBootcamp} alt="Roller derby bootcamp training event promotional poster with event details and registration information" className="h-full object-contain" />
               </div>
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
                 <img src={rollersExtra1} alt="Bootcamp detail badge" className="h-full object-contain" />
@@ -116,7 +116,7 @@ const RoseCityRollers = () => {
             </p>
 
             <div className="h-96 mb-8 flex items-center justify-center overflow-hidden">
-              <img alt="Tournament Hero Image" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
+              <img alt="Rose City Rollers tournament hero banner featuring dynamic roller derby action photography and event branding" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">

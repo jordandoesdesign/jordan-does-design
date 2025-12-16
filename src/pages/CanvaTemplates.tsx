@@ -42,7 +42,7 @@ const CanvaTemplates = () => {
 
           {/* Main Template Image */}
           <div className="mb-16">
-            <img src={canvaMealPlan} alt="Weekly Meal Plan Template" className="w-full max-w-2xl mx-auto shadow-lg" />
+            <img src={canvaMealPlan} alt="Colorful weekly meal plan template in Canva featuring organized daily meal sections with food photography" className="w-full max-w-2xl mx-auto shadow-lg" />
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">I love desiging tools and templates that make it easier for small business owners and content creators to share their ideas and generate content they are excited about.                              
@@ -53,7 +53,7 @@ const CanvaTemplates = () => {
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="h-80 md:h-[30rem] flex items-center justify-center overflow-hidden">
-              <img alt="Weekly Meal Plan Template" className="w-full h-full object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
+              <img alt="Weekly meal plan template layout showing shopping list and daily recipes in a grid format" className="w-full h-full object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
             </div>
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
@@ -66,14 +66,14 @@ const CanvaTemplates = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
               <div className="space-y-6">
                 <div className="h-48 md:h-[18rem] flex items-center justify-center overflow-hidden">
-                  <img alt="Pinterest template detail" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
+                  <img alt="Pinterest template featuring Food With Feeling branding and recipe content with warm color palette" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
                 </div>
                 <div className="h-64 md:h-[22rem] flex items-center justify-center overflow-hidden">
-                  <img alt="Pinterest template layout" className="w-full h-full object-contain" src="/lovable-uploads/73d84817-27a4-432b-b2d2-5f83798612ab.png" />
+                  <img alt="Minimalist Pinterest template design with clean typography for recipe sharing" className="w-full h-full object-contain" src="/lovable-uploads/73d84817-27a4-432b-b2d2-5f83798612ab.png" />
                 </div>
               </div>
               <div className="md:col-span-2 h-80 md:h-[28rem] flex items-center justify-center overflow-hidden">
-                <img alt="Pinterest template collage" className="w-full h-full object-contain" src="/lovable-uploads/f29e482c-bd8c-457d-87bb-2e3e2eac086a.png" />
+                <img alt="Collection of Pinterest pin templates arranged in a creative collage showing various recipe styles and layouts" className="w-full h-full object-contain" src="/lovable-uploads/f29e482c-bd8c-457d-87bb-2e3e2eac086a.png" />
               </div>
             </div>
           </div>
@@ -85,18 +85,18 @@ const CanvaTemplates = () => {
             </h2>
             <div className="flex flex-col md:flex-row gap-8 items-start md:items-center md:justify-center md:mx-auto">
               <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin1} alt="Pinterest Pin 1" className="w-full h-full object-contain" />
+                <img src={pinterestPin1} alt="Pinterest pin template featuring healthy recipe with professional food photography and brand-consistent typography" className="w-full h-full object-contain" />
               </div>
               <div className="w-full md:w-64 space-y-4">
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                  <img src={pinterestPin2} alt="Pinterest Pin 2" className="w-full h-full object-contain" />
+                  <img src={pinterestPin2} alt="Tall Pinterest pin design showcasing meal prep ideas with step-by-step visual layout" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                  <img alt="Additional Pinterest template in Canva" className="w-full h-full object-contain" src="/lovable-uploads/7a8bc8a7-66fe-4d3a-aa22-36d41b14ea1f.png" />
+                  <img alt="Pinterest pin template featuring weekly meal inspiration with clean modern design" className="w-full h-full object-contain" src="/lovable-uploads/7a8bc8a7-66fe-4d3a-aa22-36d41b14ea1f.png" />
                 </div>
               </div>
               <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
-                <img src={pinterestPin3} alt="Pinterest Pin 3" className="w-full h-full object-contain" />
+                <img src={pinterestPin3} alt="Pinterest pin template with dessert recipe featuring elegant styling and brand elements" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>

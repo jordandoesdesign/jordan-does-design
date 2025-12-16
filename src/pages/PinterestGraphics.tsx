@@ -40,7 +40,7 @@ Templates</h1>
           {/* First Pinterest Graphics Showcase */}
           <div className="mb-16">
             <div className="h-[22rem] md:h-[28rem] flex items-center justify-center overflow-hidden">
-              <img src={pinterestCollection} alt="Pinterest Graphics" className="shadow-lg w-full h-full object-scale-down" />
+              <img src={pinterestCollection} alt="Collection of Pinterest pin templates featuring food photography and recipe graphics for Unbound Wellness" className="shadow-lg w-full h-full object-scale-down" />
             </div>
           </div>
 
@@ -55,15 +55,15 @@ Templates</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex justify-center">
                 <div className="h-64 md:h-80 overflow-hidden">
-                  <img alt="Canva Templates showcase" src="/lovable-uploads/6613963f-319a-41d4-bb81-2abc5050d45a.png" className="w-full h-full object-scale-down" />
+                  <img alt="Canva template editor showing Pinterest pin designs with recipe content and brand elements" src="/lovable-uploads/6613963f-319a-41d4-bb81-2abc5050d45a.png" className="w-full h-full object-scale-down" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="h-64 md:h-80 overflow-hidden">
-                  <img alt="Pinterest Template" src="/lovable-uploads/6ed0a451-b838-49d1-a183-dff321b7863a.png" className="w-full h-full object-contain" />
+                  <img alt="Pinterest pin template featuring healthy recipe with avocado toast and fresh ingredients" src="/lovable-uploads/6ed0a451-b838-49d1-a183-dff321b7863a.png" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-56 md:h-72 overflow-hidden">
-                  <img alt="Pinterest Template" src="/lovable-uploads/dfab7acb-8522-4723-a63d-127a6cec718f.png" className="w-full h-full object-contain" />
+                  <img alt="Pinterest pin template with colorful food photography and minimalist typography" src="/lovable-uploads/dfab7acb-8522-4723-a63d-127a6cec718f.png" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
@@ -78,13 +78,13 @@ Templates</h1>
           {/* Three Pinterest Pins Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="h-80 md:h-96 flex items-center justify-center overflow-hidden">
-              <img alt="Pinterest Pin 1" src="/lovable-uploads/68864147-8055-43f3-ae5f-72c9f8310288.png" className="w-full h-full object-contain" />
+              <img alt="Pinterest pin design featuring a chicken recipe with warm earth tone color palette" src="/lovable-uploads/68864147-8055-43f3-ae5f-72c9f8310288.png" className="w-full h-full object-contain" />
             </div>
             <div className="h-[22rem] md:h-[30rem] flex items-center justify-center overflow-hidden">
-              <img alt="Pinterest Pin 2" className="w-full h-full object-contain" src="/lovable-uploads/215fba7a-b00f-4069-8c92-badd7d87bd72.png" />
+              <img alt="Tall Pinterest pin template showcasing healthy breakfast bowl recipe with vibrant ingredients" className="w-full h-full object-contain" src="/lovable-uploads/215fba7a-b00f-4069-8c92-badd7d87bd72.png" />
             </div>
             <div className="h-80 md:h-96 flex items-center justify-center overflow-hidden">
-              <img alt="Pinterest Pin 3" className="w-full h-full object-contain" src="/lovable-uploads/49934b99-3677-4a52-815c-35b4d3e1a0f3.png" />
+              <img alt="Pinterest pin design for dessert recipe with elegant typography and food styling" className="w-full h-full object-contain" src="/lovable-uploads/49934b99-3677-4a52-815c-35b4d3e1a0f3.png" />
             </div>
           </div>
 
@@ -98,14 +98,14 @@ Templates</h1>
             </p>
             <div className="space-y-8">
               <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
-                <img src={canvaIcons} alt="Icon Set" className="w-full h-full object-contain" />
+                <img src={canvaIcons} alt="Custom hand-drawn icon set featuring food and lifestyle illustrations for Pinterest templates" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
-                  <img src={templateWithIcons} alt="Template with Icons" className="w-full h-full object-contain" />
+                  <img src={templateWithIcons} alt="Pinterest template design showing custom icons integrated with recipe content" className="w-full h-full object-contain" />
                 </div>
                 <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
-                  <img alt="Icon Set detail" className="w-full h-full object-contain" src="/lovable-uploads/b9825e9e-65aa-4851-926e-ac9dad7f3fb2.png" />
+                  <img alt="Close-up detail of custom illustrated icons showing food and wellness themed graphics" className="w-full h-full object-contain" src="/lovable-uploads/b9825e9e-65aa-4851-926e-ac9dad7f3fb2.png" />
                 </div>
               </div>
             </div>
