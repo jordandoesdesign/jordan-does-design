@@ -34,8 +34,8 @@ const CanvaTemplates = () => {
           </h1>
           
           <div className="flex flex-wrap justify-center gap-4 text-sm text-primary mb-12">
-            <span className="text-base">✿  Weekly Meal Plans   ✿</span>
-            <span className="text-base">Pinterest Templates  ✿</span>
+            <span className="text-base">✿  Weekly Meal Plans   ✿</span>
+            <span className="text-base">Pinterest Templates  ✿</span>
           </div>
 
           
@@ -52,12 +52,12 @@ const CanvaTemplates = () => {
 
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="h-80 md:h-[30rem] flex items-center justify-center overflow-hidden">
+            <div className="h-80 md:h-[488px] md:w-[709px] flex items-center justify-center overflow-hidden">
               <img alt="Weekly meal plan template layout showing shopping list and daily recipes in a grid format" className="w-full h-full object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
             </div>
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
-              <p className="text-muted-foreground">The creator, foodwithfeeling.com, loves to create and share weekly meal plans with followers. By creating editable templates in Canva, the meal plan and shopping list is easy to update and the new content can easily be generated every week.  </p>
+              <p className="text-muted-foreground">Brita at <a href="http://www.foodwithfeeling.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">Food with Feeling</a>, loves to create and share weekly meal plans with followers. By creating editable templates in Canva, the meal plan and shopping list is easy to update and the new content can easily be generated every week.</p>
             </div>
           </div>
 
