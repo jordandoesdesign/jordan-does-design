@@ -68,7 +68,7 @@ const CanvaTemplates = () => {
                 <div className="h-48 md:h-[18rem] flex items-center justify-center overflow-hidden">
                   <img alt="Pinterest template featuring Food With Feeling branding and recipe content with warm color palette" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
                 </div>
-                <div className="h-[36rem] md:h-[49.5rem] flex items-center justify-center overflow-hidden">
+                <div className="h-96 md:h-[33rem] flex items-center justify-center overflow-hidden">
                   <img alt="Minimalist Pinterest template design with clean typography for recipe sharing" className="w-full h-full object-contain" src="/lovable-uploads/73d84817-27a4-432b-b2d2-5f83798612ab.png" />
                 </div>
               </div>
