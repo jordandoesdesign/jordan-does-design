@@ -90,7 +90,7 @@ const SurrBrand = () => {
 
           {/* Supporting Text 3 */}
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            After the logo is established, the rest of the brand elements are created. Brand guidelines are established so that the brand can stay consistent and recognizable across different channels.  
+            After the logo is established, the rest of the brand elements are created. Brand guidelines are established so that your brand can stay consistent and recognizable.  
 
           </p>
 

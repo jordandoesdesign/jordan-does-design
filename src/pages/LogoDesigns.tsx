@@ -111,17 +111,17 @@ const LogoDesigns = () => {
                 Greenroom
               </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
-                <span className="text-base">✿   Logo Design</span>
+                <span className="text-base">✿   Logo Design</span>
                 <span className="text-base">✿</span>
                 <span className="text-base">Brand Design</span>
                 <span className="text-base">✿</span>
-                <span className="text-base">Brand Style Guides   ✿
+                <span className="text-base">Brand Style Guides   ✿
               </span>
               </div>
             </div>
 
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              The logo is just the first step in creating a full visual identity. I design the full identity and provide you with a set of guidelines that help the brand stay consistent, recognizable, and easy to use.
+              The logo is just the first step in creating a full visual identity. I design the full identity and provide you with a set of guidelines that help your brand stay consistent, recognizable, and easy to use.
             </p>
 
             {/* Greenroom Images */}
@@ -142,13 +142,13 @@ const LogoDesigns = () => {
                 Peralta
               </h2>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-primary">
-                <span className="text-base">✿   Logo Design</span>
+                <span className="text-base">✿   Logo Design</span>
                 <span className="text-base">✿</span>
-                <span className="text-base">Brand Design   ✿</span>
+                <span className="text-base">Brand Design   ✿</span>
               </div>
             </div>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">I love creating brands that feel like a true reflection of the business.  Brand guidelines can help your visuals stay consistent and help you generate content quickly across print and digital channels.</p>
+            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">I love creating brands that feel like a true reflection of the business.  Brand guidelines can help your visuals stay consistent and help you connect with your audience quickly across print and digital channels.</p>
 
             {/* Peralta Images */}
             <div className="grid grid-cols-2 gap-2 lg:gap-[20px] mb-7">
