@@ -45,7 +45,7 @@ const CanvaTemplates = () => {
             <img src={canvaMealPlan} alt="Colorful weekly meal plan template in Canva featuring organized daily meal sections with food photography" className="w-full max-w-2xl mx-auto shadow-lg" />
           </div>
 
-          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">I love desiging tools and templates that make it easier for small business owners and content creators to share their ideas and generate content they are excited about.                              
+          <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">I love designing tools and templates that make it easier for you to share your ideas and connect with your audience through content you're excited about.                              
 
   
         </p>
@@ -57,7 +57,7 @@ const CanvaTemplates = () => {
             </div>
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
-              <p className="text-muted-foreground">Brita at <a href="http://www.foodwithfeeling.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">Food with Feeling</a>, loves to create and share weekly meal plans with followers. By creating editable templates in Canva, the meal plan and shopping list is easy to update and the new content can easily be generated every week.</p>
+              <p className="text-muted-foreground">Brita at <a href="http://www.foodwithfeeling.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">Food with Feeling</a>, loves to create and share weekly meal plans with followers. By creating editable templates in Canva, the meal plan and shopping list is easy to update and new content can easily reach her audience every week.</p>
             </div>
           </div>
 

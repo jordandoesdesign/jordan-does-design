@@ -45,7 +45,7 @@ Templates</h1>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
-            I love to work with content creators to help them create templates that match their brand and help them quickly post new content.  
+            I love to work with content creators to help create templates that match your brand and help you share your content.  
  
 
           </p>
