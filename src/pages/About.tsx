@@ -62,7 +62,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Social Media Templates
             </h2>
-            <p className="text-muted-foreground mb-8">I enjoy working with content creators to help them create design tools custom to their brand. With a background in digital marketing and over 10 years of design experience, I can provide you with all the design templates you need to save time and create engaging social content faster.</p>
+            <p className="text-muted-foreground mb-8">I enjoy working with content creators to help you create design tools custom to your brand. With a background in digital marketing and over 10 years of design experience, I can provide you with all the design templates you need to save time and create engaging content.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/work">
                 <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
