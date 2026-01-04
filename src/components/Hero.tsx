@@ -20,8 +20,8 @@ const Hero = () => {
             {/* Marquee Services */}
             <div className="overflow-hidden whitespace-nowrap mb-8">
               <div className="inline-block animate-marquee">
-                <span className="text-lg text-primary font-medium px-[30px] md:text-2xl">{services}</span>
-                <span className="text-lg md:text-xl text-primary font-medium">{services}</span>
+                <span className="text-lg md:text-2xl text-primary font-medium px-[30px]">{services}</span>
+                <span className="text-lg md:text-2xl text-primary font-medium">{services}</span>
               </div>
             </div>
 
