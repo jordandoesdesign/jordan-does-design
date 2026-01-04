@@ -24,7 +24,7 @@ const projects = [{
   link: "/work/canva-templates"
 }, {
   id: 3,
-  title: "Brand Design: SURRI",
+  title: "Brand Design • SURRI",
   subtitle: "Brand design & strategy for a small business that sells handmade consumer goods",
   images: ["placeholder"],
   link: "/work/surr-brand"

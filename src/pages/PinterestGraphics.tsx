@@ -19,7 +19,7 @@ const PinterestGraphics = () => {
     title: "Social Media Event Templates • Rose City Rollers",
     link: "/work/rose-city-rollers"
   }, {
-    title: "Brand Design: SURRI",
+    title: "Brand Design • SURRI",
     link: "/work/surr-brand"
   }];
   return <div className="min-h-screen bg-background">

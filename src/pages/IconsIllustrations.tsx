@@ -35,7 +35,7 @@ const IconsIllustrations = () => {
     title: "Canva Pinterest Graphics",
     link: "/work/pinterest-graphics"
   }, {
-    title: "Brand Design: SURRI",
+    title: "Brand Design • SURRI",
     link: "/work/surr-brand"
   }];
   const carouselImages = [{
