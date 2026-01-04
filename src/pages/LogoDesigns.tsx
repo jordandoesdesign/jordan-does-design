@@ -79,7 +79,7 @@ const LogoDesigns = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-8">
             Logo Design
           </h1>
           <p className="text-center text-muted-foreground text-lg mb-16 max-w-3xl mx-auto pt-[20px]">
