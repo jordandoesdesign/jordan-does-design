@@ -37,7 +37,14 @@ const RoseCityRollers = () => {
           </h1>
           
           <div className="flex justify-center text-primary mb-12">
-            <span className="text-sm md:text-base text-center">✿ Logo Design ✿ Brand Design ✿ Social Media Campaign ✿</span>
+            {/* Desktop */}
+            <span className="hidden md:block text-base text-center">✿ Logo Design ✿ Brand Design ✿ Social Media Campaign ✿</span>
+            {/* Mobile/Tablet */}
+            <div className="flex flex-col items-center md:hidden text-sm">
+              <span>✿ Logo Design</span>
+              <span>✿ Brand Design</span>
+              <span>✿ Social Media Campaign</span>
+            </div>
           </div>
 
           

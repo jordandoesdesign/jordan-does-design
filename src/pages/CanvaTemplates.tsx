@@ -34,7 +34,13 @@ const CanvaTemplates = () => {
           </h1>
           
           <div className="flex justify-center text-primary mb-12">
-            <span className="text-sm md:text-base text-center">✿ Weekly Meal Plans ✿ Pinterest Templates ✿</span>
+            {/* Desktop */}
+            <span className="hidden md:block text-base text-center">✿ Weekly Meal Plans ✿ Pinterest Templates ✿</span>
+            {/* Mobile/Tablet */}
+            <div className="flex flex-col items-center md:hidden text-sm">
+              <span>✿ Weekly Meal Plans</span>
+              <span>✿ Pinterest Templates</span>
+            </div>
           </div>
 
           

@@ -32,7 +32,14 @@ Templates</h1>
           
           
           <div className="flex justify-center text-primary mb-12">
-            <span className="text-sm md:text-base text-center">✿ Pinterest Templates ✿ Social Media Templates ✿ Canva Templates ✿</span>
+            {/* Desktop */}
+            <span className="hidden md:block text-base text-center">✿ Pinterest Templates ✿ Social Media Templates ✿ Canva Templates ✿</span>
+            {/* Mobile/Tablet */}
+            <div className="flex flex-col items-center md:hidden text-sm">
+              <span>✿ Pinterest Templates</span>
+              <span>✿ Social Media Templates</span>
+              <span>✿ Canva Templates</span>
+            </div>
           </div>
 
           
