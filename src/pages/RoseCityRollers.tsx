@@ -64,7 +64,7 @@ const RoseCityRollers = () => {
             </p>
 
             {/* Campaign Assets Grid - Horizontal row on desktop */}
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mb-16">
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
                 <img src={rollersEventPoster} alt="Hometown Throwdown roller derby tournament event logo with bold typography and athletic design" className="h-full object-contain" />
               </div>
@@ -88,7 +88,7 @@ const RoseCityRollers = () => {
             </p>
 
             {/* Bootcamp images - Horizontal row on desktop */}
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mb-16">
               <div className="h-64 w-full md:w-auto md:h-72 flex items-center justify-center overflow-hidden">
                 <img src={rollersBootcamp} alt="Roller derby bootcamp training event promotional poster with event details and registration information" className="h-full object-contain" />
               </div>
@@ -111,17 +111,12 @@ const RoseCityRollers = () => {
               Social media designs to increase fan engagement and promote ticket sales to a roller derby tournament
             </p>
 
-            <div className="h-96 mb-8 flex items-center justify-center overflow-hidden">
+            <div className="h-96 mb-4 md:mb-8 flex items-center justify-center overflow-hidden">
               <img alt="Rose City Rollers tournament hero banner featuring dynamic roller derby action photography and event branding" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                <img src={rollersExtra3} alt="Tournament social graphic" className="w-full h-full object-contain" />
-              </div>
-              <div className="h-64 flex items-center justify-center overflow-hidden">
-                
-              </div>
+            <div className="h-64 flex items-center justify-center overflow-hidden">
+              <img src={rollersExtra3} alt="Tournament social graphic" className="w-full h-full object-contain" />
             </div>
           </div>
 
