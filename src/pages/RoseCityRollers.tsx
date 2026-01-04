@@ -29,11 +29,8 @@ const RoseCityRollers = () => {
       
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-2">
-            Social Media Design
-          </h1>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-8">
-            • Rose City Rollers
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-8 leading-tight">
+            Social Media Design<br />• Rose City Rollers
           </h1>
           
           <div className="flex justify-center text-primary mb-12">
