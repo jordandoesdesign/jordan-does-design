@@ -18,7 +18,7 @@ const CanvaTemplates = () => {
     title: "Canva Pinterest Graphics",
     link: "/work/pinterest-graphics"
   }, {
-    title: "Brand Design: SURRI",
+    title: "Brand Design • SURRI",
     link: "/work/surr-brand"
   }];
   return <div className="min-h-screen bg-background">
