@@ -127,7 +127,7 @@ const LogoDesigns = () => {
             </p>
 
             {/* Greenroom Images */}
-            <div className="space-y-8">
+            <div className="space-y-3 md:space-y-8">
               <div className="h-96 md:h-[28rem] flex items-center justify-center overflow-hidden">
                 <img src={greenroomExtra1} alt="Greenroom brand collateral" className="w-full h-full object-contain" />
               </div>
@@ -157,7 +157,7 @@ const LogoDesigns = () => {
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">I love creating brands that feel like a true reflection of the business.  Brand guidelines can help your visuals stay consistent and help you connect with your audience quickly across print and digital channels.</p>
 
             {/* Peralta Images */}
-            <div className="grid grid-cols-2 gap-2 lg:gap-[20px] mb-7">
+            <div className="grid grid-cols-2 gap-2 md:gap-3 lg:gap-[20px] mb-7">
               <div className="h-56 md:h-96 flex items-center justify-end overflow-hidden">
                 <img alt="Peralta brand exploration" className="h-full object-contain border-0" src="/lovable-uploads/419b0cc0-3671-406c-a4ba-7122d57fef60.png" />
               </div>

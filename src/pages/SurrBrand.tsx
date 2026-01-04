@@ -47,7 +47,7 @@ const SurrBrand = () => {
           </p>
 
           {/* Image Story 1: Two stacked large images */}
-          <div className="space-y-8 mb-16">
+          <div className="space-y-3 md:space-y-8 mb-16">
             <div className="w-full max-w-xl md:max-w-2xl mx-auto overflow-hidden border border-muted rounded-lg">
               <img src={surriExtra1} alt="SURRI 1207 brand packaging mockup" loading="lazy" className="w-full h-full object-scale-down" />
             </div>
@@ -62,7 +62,7 @@ const SurrBrand = () => {
           </p>
 
           {/* Image Story 2: Two stacked large images */}
-          <div className="space-y-8 mb-16">
+          <div className="space-y-3 md:space-y-8 mb-16">
             <div className="w-full max-w-3xl mx-auto overflow-hidden border border-muted rounded-lg">
               <img alt="SURRI 1207 primary logo" className="w-full h-full object-contain" loading="lazy" src="/lovable-uploads/04ddca21-5b80-4f14-aec7-ed0cc1ba6961.png" />
             </div>
@@ -79,7 +79,7 @@ const SurrBrand = () => {
 
           {/* Trio of smaller photos */}
           <div className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               <div className="h-64 flex items-center justify-center overflow-hidden border border-muted rounded-lg">
                 <img alt="SURRI 1207 tag close-up" loading="lazy" className="w-full h-full object-contain" src="/lovable-uploads/0c1a5467-6796-45ee-8b75-227cab146cb5.png" />
               </div>

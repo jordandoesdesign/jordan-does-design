@@ -53,7 +53,7 @@ const CanvaTemplates = () => {
         </p>
 
           {/* Template Showcase Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 mb-16">
             <div className="h-80 md:h-[488px] md:w-[709px] flex items-center justify-center overflow-hidden">
               <img alt="Weekly meal plan template layout showing shopping list and daily recipes in a grid format" className="w-full h-full object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
             </div>
@@ -65,8 +65,8 @@ const CanvaTemplates = () => {
 
           {/* Pinterest Gallery Layout */}
           <div className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 items-stretch">
+              <div className="space-y-3 md:space-y-6">
                 <div className="h-48 md:h-[18rem] flex items-center justify-center overflow-hidden">
                   <img alt="Pinterest template featuring Food With Feeling branding and recipe content with warm color palette" src="/lovable-uploads/67a3780e-1470-4173-ae16-5065e2678c17.png" className="w-full h-full object-scale-down" />
                 </div>
@@ -85,11 +85,11 @@ const CanvaTemplates = () => {
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
               Pinterest Templates in Canva
             </h2>
-            <div className="flex flex-col md:flex-row gap-8 items-start md:items-center md:justify-center md:mx-auto">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-8 items-start md:items-center md:justify-center md:mx-auto">
               <div className="w-full md:w-64 h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                 <img src={pinterestPin1} alt="Pinterest pin template featuring healthy recipe with professional food photography and brand-consistent typography" className="w-full h-full object-contain" />
               </div>
-              <div className="w-full md:w-64 space-y-4">
+              <div className="w-full md:w-64 space-y-3 md:space-y-4">
                 <div className="h-64 md:h-[32rem] flex items-center justify-center overflow-hidden">
                   <img src={pinterestPin2} alt="Tall Pinterest pin design showcasing meal prep ideas with step-by-step visual layout" className="w-full h-full object-contain" />
                 </div>

@@ -128,8 +128,8 @@ const IconsIllustrations = () => {
           </div>
 
           {/* Stacked Layout - Tablet and Mobile Only */}
-          <div className="mb-24 lg:hidden space-y-16">
-            {carouselImages.map((image, index) => <div key={index} className="flex flex-col items-center gap-6">
+          <div className="mb-24 lg:hidden space-y-8 md:space-y-12">
+            {carouselImages.map((image, index) => <div key={index} className="flex flex-col items-center gap-3 md:gap-6">
                 {/* Image */}
                 <div className="w-full flex items-center justify-center">
                   <img src={image.src} alt={image.alt} className="max-h-[350px] w-auto object-contain" />

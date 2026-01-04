@@ -60,13 +60,13 @@ const PinterestGraphics = () => {
 
           {/* Badge and Graphics Grid */}
           <div className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
               <div className="flex justify-center">
                 <div className="h-64 md:h-80 overflow-hidden">
                   <img alt="Canva template editor showing Pinterest pin designs with recipe content and brand elements" src="/lovable-uploads/6613963f-319a-41d4-bb81-2abc5050d45a.png" className="w-full h-full object-scale-down" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <div className="h-64 md:h-80 overflow-hidden">
                   <img alt="Pinterest pin template featuring healthy recipe with avocado toast and fresh ingredients" src="/lovable-uploads/6ed0a451-b838-49d1-a183-dff321b7863a.png" className="w-full h-full object-contain" />
                 </div>
@@ -82,7 +82,7 @@ const PinterestGraphics = () => {
           </p>
 
           {/* Three Pinterest Pins Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8 mb-16">
             <div className="h-80 md:h-96 flex items-center justify-center overflow-hidden">
               <img alt="Pinterest pin design featuring a chicken recipe with warm earth tone color palette" src="/lovable-uploads/68864147-8055-43f3-ae5f-72c9f8310288.png" className="w-full h-full object-contain" />
             </div>
@@ -102,11 +102,11 @@ const PinterestGraphics = () => {
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
               We created a custom icon set in Canva that matches the brand. This is a fun element that can be added to any of the templates and makes the images more engaging to the audience as they scroll through the social platform. 
             </p>
-            <div className="space-y-8">
+            <div className="space-y-3 md:space-y-8">
               <div className="h-64 md:h-80 flex items-center justify-center overflow-hidden">
                 <img src={canvaIcons} alt="Custom hand-drawn icon set featuring food and lifestyle illustrations for Pinterest templates" className="w-full h-full object-contain" />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
                 <div className="h-56 md:h-72 flex items-center justify-center overflow-hidden">
                   <img src={templateWithIcons} alt="Pinterest template design showing custom icons integrated with recipe content" className="w-full h-full object-contain" />
                 </div>
