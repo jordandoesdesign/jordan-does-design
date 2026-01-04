@@ -79,11 +79,8 @@ const RoseCityRollers = () => {
 
           {/* Bootcamp Event Section */}
           <div className="mb-24">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
-              Bootcamp Event
-            </h2>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
-              Social Media Campaign
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12 leading-tight">
+              Bootcamp Event<br />Social Media Campaign
             </h2>
             
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -106,11 +103,8 @@ const RoseCityRollers = () => {
 
           {/* Tournament Event Section */}
           <div className="mb-24">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
-              Tournament Event
-            </h2>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12">
-              Social Media Campaign
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary text-center mb-12 leading-tight">
+              Tournament Event<br />Social Media Campaign
             </h2>
             
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
