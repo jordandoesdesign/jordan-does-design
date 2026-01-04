@@ -110,7 +110,7 @@ const LogoDesigns = () => {
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4 flex items-center justify-center gap-2">
                 Greenroom
               </h2>
-              <div className="flex justify-center text-primary mb-2">
+              <div className="flex justify-center text-primary mb-12">
                 <span className="text-sm md:text-base text-center">✿ Logo Design ✿ Brand Design ✿ Brand Style Guides ✿</span>
               </div>
             </div>
@@ -136,7 +136,7 @@ const LogoDesigns = () => {
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
                 Peralta
               </h2>
-              <div className="flex justify-center text-primary mb-2">
+              <div className="flex justify-center text-primary mb-12">
                 <span className="text-sm md:text-base text-center">✿ Logo Design ✿ Brand Design ✿</span>
               </div>
             </div>
