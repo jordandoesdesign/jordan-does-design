@@ -19,19 +19,19 @@ const projects = [{
 }, {
   id: 2,
   title: "Canva Template Design",
-  subtitle: "Editable templates for a food blogger who shares weekly meal plans on social media",
+  subtitle: "Template design for an influencer who shares weekly meal plans",
   images: ["large"],
   link: "/work/canva-templates"
 }, {
   id: 3,
   title: "Brand Design: SURRI",
-  subtitle: "Logo & brand created for a small business that sells handmade consumer goods",
+  subtitle: "Brand design & strategy for a small business that sells handmade consumer goods",
   images: ["placeholder"],
   link: "/work/surr-brand"
 }, {
   id: 4,
   title: "Canva Pinterest Graphics",
-  subtitle: "Easy to edit Pinterest templates for a blogger who loves to create content in Canva",
+  subtitle: "Templates for an influencer who loves to create content in Canva",
   images: ["placeholder"],
   link: "/work/pinterest-graphics"
 }, {
