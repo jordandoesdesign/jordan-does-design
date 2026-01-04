@@ -27,8 +27,8 @@ const SurrBrand = () => {
 
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-4">Brand Design •</h1>
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary text-center mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-2">Brand Design •</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary text-center mb-8">
             SURRI
           </h1>
 
