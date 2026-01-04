@@ -111,11 +111,11 @@ const RoseCityRollers = () => {
               Social media designs to increase fan engagement and promote ticket sales to a roller derby tournament
             </p>
 
-            <div className="h-96 mb-4 md:mb-8 flex items-center justify-center overflow-hidden">
+            <div className="h-64 md:h-96 mb-3 md:mb-8 flex items-center justify-center overflow-hidden">
               <img alt="Rose City Rollers tournament hero banner featuring dynamic roller derby action photography and event branding" src="/lovable-uploads/667dfdf0-3f14-4e61-af27-2acb68e7eecb.png" className="w-full h-full object-contain" />
             </div>
 
-            <div className="h-64 flex items-center justify-center overflow-hidden">
+            <div className="h-48 md:h-64 flex items-center justify-center overflow-hidden">
               <img src={rollersExtra3} alt="Tournament social graphic" className="w-full h-full object-contain" />
             </div>
           </div>
