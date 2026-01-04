@@ -33,7 +33,14 @@ const SurrBrand = () => {
           </h1>
 
           <div className="flex justify-center text-primary mb-12">
-            <span className="text-sm md:text-base text-center">✿ Logo Design ✿ Brand Design ✿ Brand Style Guides ✿</span>
+            {/* Desktop */}
+            <span className="hidden md:block text-base text-center">✿ Logo Design ✿ Brand Design ✿ Brand Style Guides ✿</span>
+            {/* Mobile/Tablet */}
+            <div className="flex flex-col items-center md:hidden text-sm">
+              <span>✿ Logo Design</span>
+              <span>✿ Brand Design</span>
+              <span>✿ Brand Style Guides</span>
+            </div>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
