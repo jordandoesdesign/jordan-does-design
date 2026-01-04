@@ -32,10 +32,8 @@ const SurrBrand = () => {
             SURRI
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-primary mb-12">
-            <span className="text-base">✿    Logo Design</span>
-            <span className="text-base">✿    Brand Design</span>
-            <span className="text-base">✿  Brand Style Guides   ✿</span>
+          <div className="flex justify-center text-primary mb-12">
+            <span className="text-sm md:text-base text-center">✿ Logo Design ✿ Brand Design ✿ Brand Style Guides ✿</span>
           </div>
 
           <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
