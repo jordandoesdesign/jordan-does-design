@@ -127,11 +127,11 @@ const LogoDesigns = () => {
             </p>
 
             {/* Greenroom Images */}
-            <div className="space-y-3 md:space-y-8">
-              <div className="h-96 md:h-[28rem] flex items-center justify-center overflow-hidden">
+            <div className="space-y-2 md:space-y-8">
+              <div className="h-64 md:h-[28rem] flex items-center justify-center overflow-hidden">
                 <img src={greenroomExtra1} alt="Greenroom brand collateral" className="w-full h-full object-contain" />
               </div>
-              <div className="h-96 md:h-[28rem] flex items-center justify-center overflow-hidden">
+              <div className="h-64 md:h-[28rem] flex items-center justify-center overflow-hidden">
                 <img src={greenroomLogo} alt="Greenroom brand artwork" className="w-full h-full object-contain" />
               </div>
             </div>
