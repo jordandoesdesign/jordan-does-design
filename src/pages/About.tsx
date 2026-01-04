@@ -26,7 +26,7 @@ const About = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary mb-6">
                 About
               </h1>
-              <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
                 I'm a digital designer in Portland, OR. I make Logos, Social Campaigns, and Canva templates so that small business owners can connect with their audiences.
               </p>
             </div>
