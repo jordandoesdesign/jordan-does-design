@@ -48,7 +48,9 @@ const SeeAlsoSection = ({ projects }: SeeAlsoSectionProps) => {
             </Link>
             
             {/* Project Title */}
-            <h3 className="text-xl font-bold text-foreground mb-4">{project.title}</h3>
+            <Link to={project.link}>
+              <h3 className="text-xl font-bold text-foreground mb-4 hover:text-primary transition-colors duration-300">{project.title}</h3>
+            </Link>
             
             {/* View Project Button */}
             <Link to={project.link}>
