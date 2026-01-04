@@ -63,7 +63,9 @@ const ProjectCard = ({
           </AspectRatio>
         </div>
       </Link>
-      <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
+      <Link to={project.link}>
+        <h3 className="text-xl font-bold text-foreground mb-2 hover:text-primary transition-colors duration-300">{project.title}</h3>
+      </Link>
       <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
       <Link to={project.link}>
         <Button variant="outline" className="group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
