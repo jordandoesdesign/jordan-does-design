@@ -54,8 +54,8 @@ const CanvaTemplates = () => {
 
           {/* Template Showcase Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 mb-16">
-            <div className="h-80 md:h-[488px] md:w-[709px] flex items-center justify-center overflow-hidden">
-              <img alt="Weekly meal plan template layout showing shopping list and daily recipes in a grid format" className="w-full h-full object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
+            <div className="h-80 md:h-[488px] lg:w-[709px] flex items-center justify-center overflow-hidden">
+              <img alt="Weekly meal plan template layout showing shopping list and daily recipes in a grid format" className="w-full h-full object-cover md:object-contain" src="/lovable-uploads/b18073d5-29a4-4d84-ac73-85ba82cb4638.png" />
             </div>
             <div className="bg-background border-primary p-8 border-0">
               <h3 className="text-2xl font-heading font-bold text-primary mb-4">About</h3>
